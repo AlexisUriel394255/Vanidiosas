@@ -14,9 +14,43 @@ import Layout from '../layouts/Layout.astro';
 	<!-- This is the second information bar with the comfort slogan -->
 
 	<div class="bg-stone-900 text-white text-xs py-3 px-6 flex justify-between items-center">
-	<span>Socials</span>
-	<p>The most comfortable Shoes <span class="text-yellow-400">| Premium Comfort</span></p>
+	<!-- Social media icons -->
+	<div class="flex gap-4">
+	<svg xmlns="http://w3.org" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-stone-400 hover:text-white cursor-pointer">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+    </svg>
+	<svg xmlns="http://w3.org" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-stone-400 hover:text-white cursor-pointer">
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+    </svg>
 	</div>
+	<p>Los zapatos más cómodos<span class="text-yellow-400">| Comodidad Premium</span></p>
+	</div>
+
+	<!--In this third step I create the menu of what is sold -->
+	
+	<nav class="grid grid-cols-3 items-center bg-white py-4 px-6 w-full md:flex md:justify-between">
+	<button class="block md:hidden text-black focus:outline-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></button>
+	<img src="/images/vanidiosas.webp" class="h-18 w-auto object-contain mx-auto" alt="Gonza logo">
+	
+	<ul class="hidden md:flex md:flex-1 md:justify-center items-center gap-15">
+	<li><a href="#" class="text-stone-600 hover:text-black hover:underline underline-offset-4 hover:decoration-red-600 transition-all">Sandalias</a></li>
+	<li><a href="#" class="text-stone-600 hover:text-black hover:underline underline-offset-4 hover:decoration-red-600 transition-all">Alpargatas</a></li>
+	<li><a href="#" class="text-stone-600 hover:text-black hover:underline underline-offset-4 hover:decoration-red-600 transition-all">Lentes de sol</a></li>
+	<li><a href="#" class="text-stone-600 hover:text-black hover:underline underline-offset-4 hover:decoration-red-600 transition-all">Balerinas</a></li>
+	<li><a href="#" class="text-stone-600 hover:text-black hover:underline underline-offset-4 hover:decoration-red-600 transition-all">Joyeria</a></li>
+	<li><a href="#" class="text-stone-600 hover:text-black hover:underline underline-offset-4 hover:decoration-red-600 transition-all">Lo mas vendido</a></li>
+	<li><a href="#" class="text-stone-600 hover:text-black hover:underline underline-offset-4 hover:decoration-red-600 transition-all">Lo mas nuevo</a></li>
+	<li><a href="#" class="text-stone-600 hover:text-black hover:underline underline-offset-4 hover:decoration-red-600 transition-all">Ver todo</a></li>
+	</ul>
+	<div class="flex gap-4 justify-end">
+	<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></a>
+	<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user preview-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+	<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart preview-icon"><path d="m2.05 2.05 1.099-.028a1 1 0 0 1 1.008.815l2.69 14.347A1 1 0 0 0 7.83 18H18"/><path d="M4.563 5h16.435a1 1 0 0 1 .981 1.204l-1.026 6.226A2 2 0 0 1 18.962 14H6.25"/><circle cx="18" cy="20" r="2"/><circle cx="8" cy="20" r="2"/></svg></a>
+	</div>
+	</nav>
+
 
 
 </Layout>
