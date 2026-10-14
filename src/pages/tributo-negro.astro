@@ -2,6 +2,8 @@
 
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import Features from '../components/Features.astro';
+import RecommendationsTribute from '../components/Recommendations-Tribute.astro';
 ---
 
 
@@ -100,11 +102,47 @@ Todos nuestros zapatos son creados al momento del pedido, cuidamos hasta el mas 
 <span class="font-medium text-stone-800">Entrega</span>
 <span class="text-[10px] text-stone-400">nov 06 - nov 13</span>
 </div>
+</div>
+<div class="mt-8 border-t border-stone-200 w-full">
+  <details class="border-b border-stone-200 py-4 group cursor-pointer">
+    <summary class="flex justify-between items-center text-sm font-medium text-stone-800 uppercase tracking-wider list-none">
+      Materiales
+      <span class="text-stone-400 group-open:rotate-180 transition-transform duration-200 text-xs">▼</span>
+    </summary>
+    <div class="mt-3 text-xs md:text-sm text-stone-600 leading-relaxed pl-1">
+      <p>• Exterior: Piel 100% genuina de alta calidad con acabado premium.</p>
+      <p class="mt-1">• Forro interno: Piel suave para evitar imperfecciones o rozaduras.</p>
+      <p class="mt-1">• Suela: Material sintético de gran durabilidad y excelente agarre.</p>
+    </div>
+  </details>
+    <details class="border-b border-stone-200 py-4 group cursor-pointer">
+    <summary class="flex justify-between items-center text-sm font-medium text-stone-800 uppercase tracking-wider list-none">
+      Recomendación de talla
+      <span class="text-stone-400 group-open:rotate-180 transition-transform duration-200 text-xs">▼</span>
+    </summary>
+    <div class="mt-3 text-xs md:text-sm text-stone-600 leading-relaxed pl-1">
+      <p>Nuestros modelos vienen fieles a su medida estándar mexicana.</p>
+      <p class="mt-2 font-medium text-stone-700">¿Estás entre dos números?</p>
+      <p>Si calzas un punto medio (por ejemplo, 24.5), te sugerimos pedir la talla inmediata superior (talla 25) para garantizar un calce perfecto y óptimo confort.</p>
+    </div>
+  </details>
+  <details class="border-b border-stone-200 py-4 group cursor-pointer">
+    <summary class="flex justify-between items-center text-sm font-medium text-stone-800 uppercase tracking-wider list-none">
+      Cuidados
+      <span class="text-stone-400 group-open:rotate-180 transition-transform duration-200 text-xs">▼</span>
+    </summary>
+    <div class="mt-3 text-xs md:text-sm text-stone-600 leading-relaxed pl-1 flex flex-col gap-2">
+      <p>• Limpia suavemente con un paño seco o ligeramente húmedo para retirar el polvo superficial.</p>
+      <p>• Evita sumergir el calzado en agua o exponerlo directamente a la humedad extrema.</p>
+      <p>• En caso de que se mojen las tiras de pedrería, sécalas inmediatamente con una toalla suave a toques, sin frotar con fuerza.</p>
+    </div>
+  </details>
 
 </div>
 </div>
 </div>
 </div>
+ <RecommendationsTribute/>
 </main>
 </Layout>
 <script>
