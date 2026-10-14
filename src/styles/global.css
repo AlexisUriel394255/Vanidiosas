@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@theme{
+    /* Colors*/
+    --color-ink: #141210;
+    --color-wine: #7a1426;
+    --color-champagne: #c9a66b;
+    --color-ivory: #fbf8f4;
+    --color-sand: #f3ece2;
+    --color-muted:#6b6258;
+
+    /* Typography */
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base{
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        -webkit-font-smoothing:antialiased;
+    }
+}
