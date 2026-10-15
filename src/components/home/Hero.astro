@@ -1,17 +1,27 @@
 ---
-
+const heroImage = '/images/products/6077-snake-buck-negro-1.webp';
 ---
 <section class="bg-linear-to-br from-ink via-[#2e0e18] to-wine text-[#F3E9DA]">
-  <div class="mx-auto max-w-[1240px] px-8 py-16">
-    <p class="mb-5 text-xs uppercase tracking-[0.3em] text-champagne">Comodidad Premium</p>
-    <h1 class="max-w-xl font-display text-5xl font-medium leading-[1.02] md:text-7xl">
-      Diseñados para brillar, hechos para caminar
-    </h1>
-    <p class="mb-9 max-w-md text-lg font-light leading-relaxed text-[#E4D6C3]">
-    Calzado de diseño y fabricación propia, pensando para acompañarte todo el dia.
-    </p>
-    <a href="/products" class="inline-block bg-champagne px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] text-ink transition-colors hover:bg-[#d8b87f]">
-    Ver coleccion
-    </a>
+  <div class="mx-auto grid max-w-[1240px] items-center gap-12 px-8 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+
+    <!-- Column 1: text -->
+    <div>
+      <p class="mb-5 text-xs uppercase tracking-[0.3em] text-champagne">Comodidad Premium</p>
+      <h1 class="mb-6 max-w-xl font-display text-5xl font-medium leading-[1.02] md:text-7xl">
+        Diseñados para brillar, hechos para caminar
+      </h1>
+      <p class="mb-9 max-w-md text-lg font-light leading-relaxed text-[#E4D6C3]">
+        Calzado de diseño y fabricación propia, pensado para acompañarte todo el día.
+      </p>
+      <a href="/products" class="inline-block bg-champagne px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] text-ink transition-colors hover:bg-[#d8b87f]">
+        Ver colección
+      </a>
+    </div>
+
+    <!-- Column 2: image -->
+  <div class="mx-auto h-[320px] w-full max-w-[340px] overflow-hidden rounded-t-full bg-linear-to-b from-[#F6ECD6] to-champagne lg:h-[400px] lg:max-w-[360px] lg:justify-self-end">
+  <img src={heroImage} alt="Sandalias negras de tacón con tiras brillantes" class="size-full object-contain mix-blend-multiply" />
+</div>
+
   </div>
 </section>
