@@ -1,0 +1,21 @@
+---
+import { CreditCard, Truck, Gem } from '@lucide/astro';
+
+
+const benefits = [
+  { icon: CreditCard, title: 'Pago 100% seguro', text: 'Paga con tarjeta de débito o crédito de forma protegida.' },
+  { icon: Truck, title: 'Envío seguro', text: 'Cuidamos tu pedido hasta que llega a tu puerta.' },
+  { icon: Gem, title: 'Materiales de calidad', text: 'Calzado pensado para ser cómodo y durable.' },
+];
+---
+<section class="mx-auto grid max-w-[1240px] gap-12 px-8 py-16 text-center md:grid-cols-3">
+  {benefits.map(({ icon: Icon, title, text }) => (
+    <div>
+      <div class="mx-auto mb-5 flex size-[76px] items-center justify-center rounded-full border-[1.5px] border-champagne bg-[#F6EBD3] text-wine">
+        <Icon size={34} strokeWidth={1.3} />
+      </div>
+      <h3 class="mb-3 text-sm font-medium uppercase tracking-[0.22em]">{title}</h3>
+      <p class="mx-auto max-w-[300px] text-[15px] leading-relaxed text-muted">{text}</p>
+    </div>
+  ))}
+</section>
