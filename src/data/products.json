@@ -1,0 +1,6 @@
+[
+    { "slug": "mariela-de-oro", "name": "Mariela de oro", "price":1599, "image": "/images/products/6077-snake-cabra-metal-oro-7.webp", "rating":5, "reviewCount": 8},
+    { "slug": "perlas-cabra-maquillaje", "name":"Perlas cabra", "price": 1599, "image": "/images/products/6077-perlas-cabra-maquillaje-1.webp", "rating":5, "reviewCount": 7},
+    { "slug": "snake-buck-negro", "name":"Snake buck negro", "price":1599, "image":"/images/products/6077-snake-buck-negro-1.webp", "rating":5, "reviewCount": 6},
+    { "slug": "snake-cabra-metal", "name":"Snake cabra metal oro", "price":1599, "image":"/images/products/6077-snake-cabra-metal-oro-2.webp", "rating":5, "reviewCount":5}
+]

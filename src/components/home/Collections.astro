@@ -1,0 +1,19 @@
+---
+const collections = [
+  { name: 'Sandalias', href: '/collections/sandals', image: '/images/products/6077-perlas-buck-negro-1.webp' },
+  { name: 'Zapatillas', href: '/collections/shoes', image: '/images/products/6077-snake-cabra-metal-oro-2.webp' },
+  { name: 'Balerinas', href: '/collections/flats', image: '/images/products/6077-perlas-cabra-maquillaje-1.webp' },
+  { name: 'Lo más nuevo', href: '/collections/new-arrivals', image: '/images/products/6077-snake-buck-negro-1.webp' },
+];
+---
+<section class="mx-auto max-w-[1240px] px-8 py-20">
+  <h2 class="mb-10 font-display text-4xl font-medium md:text-5xl">Nuestras colecciones</h2>
+
+  <div class="grid grid-cols-2 gap-6 lg:grid-cols-4">
+    {collections.map((item) => (
+      <a href={item.href} class="flex aspect-[3/4] items-end bg-linear-to-b from-[#EFE5D6] to-[#CDB89A] p-6">
+        <span class="font-display text-3xl font-medium">{item.name}</span>
+      </a>
+    ))}
+  </div>
+</section>
