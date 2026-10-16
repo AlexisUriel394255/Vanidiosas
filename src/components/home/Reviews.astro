@@ -1,0 +1,41 @@
+---
+// TODO: replace placeholders with real customer reviews approved by the client
+const reviews = [
+  { author: '[Nombre del cliente]', product: '[Producto reseñado]', rating: 5, title: '[Título de la reseña]', body: '[Texto de la reseña del cliente: comodidad, color, talla.]', image: '/images/products/6077-snake-cabra-metal-oro-7.webp' },
+  { author: '[Nombre del cliente]', product: '[Producto reseñado]', rating: 5, title: '[Título de la reseña]', body: '[Texto de la reseña del cliente: comodidad, color, talla.]', image: '/images/products/6077-snake-buck-negro-1.webp' },
+  { author: '[Nombre del cliente]', product: '[Producto reseñado]', rating: 5, title: '[Título de la reseña]', body: '[Texto de la reseña del cliente: comodidad, color, talla.]', image: '/images/products/6077-perlas-cabra-maquillaje-1.webp' },
+];
+---
+<section class="bg-[#F6F0E2]">
+  <div class="mx-auto max-w-[1240px] px-8 py-20">
+    <div class="mb-10 flex flex-wrap items-center justify-between gap-6">
+      <div>
+        <h2 class="font-display text-4xl font-medium md:text-5xl">Lo que dicen nuestras clientas</h2>
+        <div class="mt-3.5 h-[3px] w-16 bg-champagne"></div>
+      </div>
+      <div class="flex items-center gap-3 rounded-full border border-champagne bg-white px-5 py-3">
+        <span class="text-[15px] tracking-widest text-gold-deep">★★★★★</span>
+        <span class="text-sm text-muted">[N] reseñas</span>
+      </div>
+    </div>
+
+    <div class="grid gap-7 md:grid-cols-3">
+      {reviews.map((review) => (
+        <article class="flex flex-col gap-3.5 border border-t-[3px] border-[#EADFC9] border-t-champagne bg-white p-8">
+          <span class="h-7 font-display text-6xl leading-[0.5] text-gold-deep" aria-hidden="true">“</span>
+          <p class="text-sm tracking-widest text-gold-deep">{'★'.repeat(review.rating)}</p>
+          <h3 class="font-display text-2xl font-medium">{review.title}</h3>
+          <p class="text-[15px] leading-relaxed text-muted">{review.body}</p>
+
+          <div class="mt-auto flex items-center gap-3.5 border-t border-[#EFE5D6] pt-5">
+            <img src={review.image} alt="" loading="lazy" class="size-14 border border-[#EFE6D6] bg-white object-contain" />
+            <div>
+              <p class="text-[15px] font-medium">{review.author}</p>
+              <p class="text-[13px] text-muted">{review.product}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
