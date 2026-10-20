@@ -3,7 +3,6 @@ import Layout from '../../layouts/Layout.astro';
 import products from '../../data/products.json';
 import { formatPrice } from '../../utils/format';
 import ProductPurchase from '../../components/product/ProductPurchase.tsx';
-
 export function getStaticPaths() {
   return products.map((product) => ({
     params: { slug: product.slug },
@@ -47,12 +46,15 @@ const mainImage = product.images?.[0] ?? product.image;
 
         <p class="mb-6 text-3xl font-medium">{formatPrice(product.price)}</p>
 
-        {product.description && (
+         {product.description && (
           <p class="max-w-md leading-relaxed text-muted">{product.description}</p>
         )}
-       {product.sizes && <ProductPurchase client:load sizes={product.sizes} />}
-      </div>
 
+        {product.sizes && (
+          <ProductPurchase client:load productName={product.name} sizes={product.sizes} />
+        )}
+       
+    </div>
     </div>
   </section>
 </Layout>
