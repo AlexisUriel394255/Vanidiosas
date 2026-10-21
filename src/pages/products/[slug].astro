@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import products from '../../data/products.json';
+import { formatPrice } from '../../utils/format';
+import ProductPurchase from '../../components/product/ProductPurchase.tsx';
+export function getStaticPaths() {
+  return products.map((product) => ({
+    params: { slug: product.slug },
+    props: { product },
+  }));
+}
+
+const { product } = Astro.props;
+const mainImage = product.images?.[0] ?? product.image;
+---
+<Layout title={`${product.name} | Vanidiosas by Gonsa`}>
+  <section class="mx-auto max-w-[1240px] px-8 py-12">
+
+    <nav aria-label="Breadcrumb" class="mb-8 text-[13px] text-muted">
+      <a href="/" class="hover:text-ink">Inicio</a>
+      <span class="mx-2">/</span>
+      <a href="/products" class="hover:text-ink">Productos</a>
+      <span class="mx-2">/</span>
+      <span class="text-ink">{product.name}</span>
+    </nav>
+
+    <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+
+      <!-- Left column: image -->
+      <div class="aspect-[4/5] overflow-hidden border border-b-[3px] border-[#EFE6D6] border-b-champagne bg-linear-to-br from-white to-[#F1E9DB]">
+        <img src={mainImage} alt={product.name} class="size-full object-contain mix-blend-multiply" />
+      </div>
+
+      <!-- Right column: product info -->
+      <div class="flex flex-col justify-center">
+        {product.sku && (
+          <p class="mb-3 text-xs uppercase tracking-[0.3em] text-muted">Modelo {product.sku}</p>
+        )}
+        <h1 class="font-display text-4xl font-medium leading-tight md:text-5xl">{product.name}</h1>
+        <div class="mb-6 mt-4 h-[3px] w-16 bg-champagne"></div>
+
+        <a href="#reviews" class="mb-6 flex items-center gap-2 text-sm">
+          <span class="tracking-widest text-gold-deep">{'★'.repeat(product.rating)}</span>
+          <span class="text-muted">({product.reviewCount} reseñas)</span>
+        </a>
+
+        <p class="mb-6 text-3xl font-medium">{formatPrice(product.price)}</p>
+
+         {product.description && (
+          <p class="max-w-md leading-relaxed text-muted">{product.description}</p>
+        )}
+
+        {product.sizes && (
+          <ProductPurchase client:load productName={product.name} sizes={product.sizes} />
+        )}
+       
+    </div>
+    </div>
+  </section>
+</Layout>

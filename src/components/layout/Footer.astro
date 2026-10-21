@@ -1,0 +1,92 @@
+---
+const columns = [
+  {
+    title: 'Nuestros productos',
+    links: [
+      { label: 'Lo más nuevo', href: '/collections/new-arrivals' },
+      { label: 'Lo más vendido', href: '/collections/best-sellers' },
+      { label: 'Sandalias', href: '/collections/sandals' },
+      { label: 'Zapatillas', href: '/collections/shoes' },
+      { label: 'Balerinas', href: '/collections/flats' },
+      { label: 'Ver todo', href: '/products' },
+    ],
+  },
+  {
+    title: 'Envíos, cambios y devoluciones',
+    links: [
+      { label: 'Política de privacidad', href: '/privacy' },
+      { label: 'Política de envíos', href: '/shipping' },
+      { label: 'Política de cambios y devoluciones', href: '/returns' },
+      { label: 'Términos y condiciones', href: '/terms' },
+    ],
+  },
+];
+
+const payments = ['Visa', 'Mastercard', 'American Express'];
+const year = new Date().getFullYear();
+---
+<footer class="border-t-[6px] border-sun bg-linear-to-b from-bone to-[#FFF1B8] text-ink">
+  <div class="mx-auto max-w-[1240px] px-8 pb-10 pt-[72px]">
+    <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1.1fr_1fr]">
+
+      <div>
+        <span class="font-display text-4xl font-semibold">Vanidiosas</span>
+        <p class="mt-1.5 text-[11px] tracking-[0.38em] text-muted">BY GONSA</p>
+      </div>
+
+      {columns.map((column) => (
+        <nav aria-label={column.title}>
+          <p class="mb-5 inline-block border-b-2 border-sun pb-1.5 text-xs font-medium uppercase tracking-[0.24em]">
+            {column.title}
+          </p>
+          <ul class="space-y-3">
+            {column.links.map((link) => (
+              <li>
+                <a href={link.href} class="text-muted transition-colors hover:text-ink">{link.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      ))}
+
+      <div>
+        <p class="mb-5 inline-block border-b-2 border-sun pb-1.5 text-xs font-medium uppercase tracking-[0.24em]">
+          ¡Contáctanos!
+        </p>
+        <p>
+          <a href="mailto:hello@example.com" class="border-b border-ink">[correo@tudominio.com]</a>
+        </p>
+        <p class="mt-4 leading-relaxed text-muted">
+          Descubre tips de moda en nuestro <a href="/blog" class="border-b border-ink text-ink">blog</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-14 flex justify-center gap-3">
+      <a href="#" aria-label="Facebook" class="flex size-11 items-center justify-center rounded-full border border-[#D9CBA8] text-ink transition-colors hover:border-sun hover:bg-sun">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 8h2V5h-2.5C11.3 5 10 6.4 10 8.5V10H8v3h2v6h3v-6h2.2l.5-3H13V8.7c0-.5.2-.7 1-.7z" />
+        </svg>
+      </a>
+      <a href="#" aria-label="Instagram" class="flex size-11 items-center justify-center rounded-full border border-[#D9CBA8] text-ink transition-colors hover:border-sun hover:bg-sun">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="4" y="4" width="16" height="16" rx="5" />
+          <circle cx="12" cy="12" r="3.5" />
+          <circle cx="17" cy="7" r=".6" />
+        </svg>
+      </a>
+    </div>
+
+    <ul class="mt-8 flex flex-wrap justify-center gap-2.5">
+      {payments.map((payment) => (
+        <li class="border border-[#D9CBA8] px-[18px] py-2 text-xs uppercase tracking-[0.14em] text-muted">{payment}</li>
+      ))}
+    </ul>
+
+    <p class="mt-10 border-t border-[#E0D2AE] pt-6 text-center text-[13px] text-muted">
+      © {year} Vanidiosas by Gonsa ·
+      <a href="/privacy" class="hover:text-ink">Política de privacidad</a> ·
+      <a href="/terms" class="hover:text-ink">Términos y condiciones</a>
+    </p>
+  </div>
+</footer>

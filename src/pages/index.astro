@@ -1,22 +1,17 @@
 ---
-
 import Layout from '../layouts/Layout.astro';
-
+import Hero from '../components/home/Hero.astro';
+import Collections from '../components/home/Collections.astro';
+import BestSellers from '../components/home/BestSellers.astro';
+import Benefits from '../components/home/Benefits.astro';
+import Reviews from '../components/home/Reviews.astro';
 ---
 
+
 <Layout>
-	<!-- In This first line of code for the red color bar for of vain women -->
-
-	<div class="bg-red-600 text-white text-center py-4 text-xs uppercase">
-	<h1 class="text-sm text-base text-lg text-xl">Vanidiosas by Gonza</h1>
-	</div>
-
-	<!-- This is the second information bar with the comfort slogan -->
-
-	<div class="bg-stone-900 text-white text-xs py-3 px-6 flex justify-between items-center">
-	<span>Socials</span>
-	<p>The most comfortable Shoes <span class="text-yellow-400">| Premium Comfort</span></p>
-	</div>
-
-
+<Hero/>
+<Collections />
+<BestSellers/>
+<Benefits/>
+<Reviews/>
 </Layout>
