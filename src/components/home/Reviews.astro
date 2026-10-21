@@ -1,29 +1,50 @@
 ---
-// TODO: replace placeholders with real customer reviews approved by the client
+
 const reviews = [
-  { author: 'Mariana Silva', product: 'Mariela de oro', rating: 5, title: '¡Los zapatos más cómodos que tengo!', body: 'Me sorprendió gratamente lo suaves que son por dentro. No me lastimaron nada el primer día de uso y la talla corresponde exactamente a la guía de medidas.', image: '/images/products/6077-snake-cabra-metal-oro-7.webp' },
-  { author: 'Valeria Mendoza', product: 'Snake buck negro', rating: 5, title: 'Excelente calidad y diseño único', body: 'El color negro con blanco es idéntico al de las fotos y combina con todo. Tienen una plataforma muy cómoda que te permite usarlos por horas sin cansarte.', image: '/images/products/6077-snake-buck-negro-1.webp' },
-  { author: 'Camila Ortega', product: 'Perlas cabra', rating: 5, title: 'Hermosos y perfectos para el día a día', body: 'Pedí mi talla habitual y me quedaron perfectos. El tono nude es muy elegante y el material se siente de excelente calidad. Los recomiendo totalmente.', image: '/images/products/6077-perlas-cabra-maquillaje-1.webp' },
+  {
+    author: 'Mariana Silva',
+    product: 'Mariela de oro',
+    rating: 5,
+    title: '¡Los zapatos más cómodos que tengo!',
+    body: 'Me sorprendió gratamente lo suaves que son por dentro. No me lastimaron nada el primer día de uso y la talla corresponde exactamente a la guía de medidas.',
+    image: '/images/products/6077-snake-cabra-metal-oro-7.webp',
+  },
+  {
+    author: 'Valeria Mendoza',
+    product: 'Snake buck negro',
+    rating: 5,
+    title: 'Excelente calidad y diseño único',
+    body: 'El color negro con blanco es idéntico al de las fotos y combina con todo. Tienen una plataforma muy cómoda que te permite usarlos por horas sin cansarte.',
+    image: '/images/products/6077-snake-buck-negro-1.webp',
+  },
+  {
+    author: 'Camila Ortega',
+    product: 'Perlas cabra',
+    rating: 5,
+    title: 'Hermosos y perfectos para el día a día',
+    body: 'Pedí mi talla habitual y me quedaron perfectos. El tono nude es muy elegante y el material se siente de excelente calidad. Los recomiendo totalmente.',
+    image: '/images/products/6077-perlas-cabra-maquillaje-1.webp',
+  },
 ];
 ---
-<section class="bg-[#F6F0E2]">
+<section id="reviews" class="bg-bone">
   <div class="mx-auto max-w-[1240px] px-8 py-20">
     <div class="mb-10 flex flex-wrap items-center justify-between gap-6">
       <div>
         <h2 class="font-display text-4xl font-medium md:text-5xl">Lo que dicen nuestras clientas</h2>
-        <div class="mt-3.5 h-[3px] w-16 bg-champagne"></div>
+        <div class="mt-3.5 h-[3px] w-16 bg-sun"></div>
       </div>
-      <div class="flex items-center gap-3 rounded-full border border-champagne bg-white px-5 py-3">
-        <span class="text-[15px] tracking-widest text-gold-deep">★★★★★</span>
+      <div class="flex items-center gap-3 rounded-full border border-[#EADFC9] bg-white px-5 py-3">
+        <span class="text-[15px] tracking-widest text-sun-deep">★★★★★</span>
         <span class="text-sm text-muted">reseñas</span>
       </div>
     </div>
 
     <div class="grid gap-7 md:grid-cols-3">
       {reviews.map((review) => (
-        <article class="flex flex-col gap-3.5 border border-t-[3px] border-[#EADFC9] border-t-champagne bg-white p-8">
-          <span class="h-7 font-display text-6xl leading-[0.5] text-gold-deep" aria-hidden="true">“</span>
-          <p class="text-sm tracking-widest text-gold-deep">{'★'.repeat(review.rating)}</p>
+        <article class="flex flex-col gap-3.5 border border-t-[3px] border-[#EADFC9] border-t-sun bg-white p-8">
+          <span class="h-7 font-display text-6xl leading-[0.5] text-sun" aria-hidden="true">“</span>
+          <p class="text-sm tracking-widest text-sun-deep">{'★'.repeat(review.rating)}</p>
           <h3 class="font-display text-2xl font-medium">{review.title}</h3>
           <p class="text-[15px] leading-relaxed text-muted">{review.body}</p>
 
