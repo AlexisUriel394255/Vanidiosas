@@ -1,42 +1,37 @@
 ---
 import products from '../../data/products.json';
-const formatPrice = (value:number) =>
-new Intl.NumberFormat('es-MX',{
-    style: 'currency',
-    currency: 'MXN',
-    maximumFractionDigits:0,
-    }).format(value);
+import { formatPrice } from '../../utils/format';
 ---
-<section class="bg-cream">
-<div class="mx-auto max-w-[1240] px-8 py-20">
-<h2 class="font-display text-4xl font-medium md:text-5xl">Lo mas vendido</h2>
-<div class="mb-10 mt-3.5 h-[3px] w-16 bg-champagne"></div>
+<section class="bg-bone">
+  <div class="mx-auto max-w-[1240px] px-8 py-20">
+    <h2 class="font-display text-4xl font-medium md:text-5xl">Lo más vendido</h2>
+    <div class="mb-10 mt-3.5 h-[3px] w-16 bg-sun"></div>
 
-<div class="grid grid-cols-2 gap-7 lg:grid-cols-4">
-{products.map((product) => (
-    <a href={`/products/${product.slug}`} class="group block">
-    <div class="aspect-[4/5] overflow-hidden border border-b-[3px] border-[#EFE6D6] border-b-champagne bg-linear-to-br from-white to-[#F1E9DB]">
-    <img
-    src={product.image}
-    alt={product.name}
-    loading="lazy"
-    class="size-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
-    />
+    <div class="grid grid-cols-2 gap-7 lg:grid-cols-4">
+      {products.map((product) => (
+        <a href={`/products/${product.slug}`} class="group block">
+          <div class="aspect-[4/5] overflow-hidden border border-b-[3px] border-[#EADFC9] border-b-sun bg-linear-to-b from-white to-[#FFF4CC]">
+            <img
+              src={product.image}
+              alt={product.name}
+              loading="lazy"
+              class="size-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <h3 class="mt-4 text-base">{product.name}</h3>
+          <p class="mt-1 text-[13px] tracking-widest text-sun-deep">
+            {'★'.repeat(product.rating)}
+            <span class="tracking-normal text-muted">({product.reviewCount})</span>
+          </p>
+          <p class="mt-1.5 text-[17px] font-medium">{formatPrice(product.price)}</p>
+        </a>
+      ))}
     </div>
-    <h3 class="mt-4 text-base">{product.name}</h3>
-    <p class="mt-1 text-[13px] tracking-widest text-gold-deep">
-    {'★'.repeat(product.rating)}
-    <span class="tracking-normal text-muted">({product.reviewCount})</span>
-    </p>
-    <p class="mt-1.5 text-[17px] font-medium">{formatPrice(product.price)}</p>
-    </a>
-))}
-</div>
 
-<div class="mt-12 text-center">
-<a href="/products" class="inline-block rounded-full bg-champagne px-11 py-4 text-xs font-medium uppercase tracking-[0.22em] text-ink transition-colors hover:bg-[#d8b87f]">
-Ver todo
-</a>
-</div>
-</div>
+    <div class="mt-12 text-center">
+      <a href="/products" class="inline-block rounded-full bg-sun px-11 py-4 text-xs font-medium uppercase tracking-[0.22em] text-ink transition-colors hover:bg-[#ffd74a]">
+        Ver todo
+      </a>
+    </div>
+  </div>
 </section>
