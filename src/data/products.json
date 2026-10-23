@@ -4,7 +4,11 @@
     "name": "Mariela de oro",
     "price": 1599,
     "image": "/images/products/6077-snake-cabra-metal-oro-7.webp",
-    "images": ["/images/products/6077-snake-cabra-metal-oro-7.webp"],
+    "images": [
+  "/images/products/6077-snake-cabra-metal-oro-7.webp",
+  "/images/products/6077-snake-cabra-metal-oro-2.webp",
+  "/images/products/6077-snake-cabra-metal-oro-6.webp"
+],
     "rating": 5,
     "reviewCount": 8,
     "sku": "6077",
@@ -40,7 +44,11 @@
     "name": "Snake cabra metal oro",
     "price": 1599,
     "image": "/images/products/6077-snake-cabra-metal-oro-2.webp",
-    "images": ["/images/products/6077-snake-cabra-metal-oro-2.webp"],
+    "images": [
+  "/images/products/6077-snake-cabra-metal-oro-2.webp",
+  "/images/products/6077-snake-cabra-metal-oro-7.webp",
+  "/images/products/6077-snake-cabra-metal-oro-6.webp"
+],
     "rating": 5,
     "reviewCount": 5,
     "sku": "6077",
