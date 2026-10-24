@@ -53,8 +53,8 @@ export default function ProductPurchase({ productName, sizes }: Props) {
             aria-pressed={selectedSize === size}
             className={`size-12 border text-sm transition-colors ${
               selectedSize === size
-                ? 'border-ink bg-ink text-ivory'
-                : 'border-[#E6DCCD] bg-white hover:border-ink'
+                ? 'border-ink bg-sun font-medium text-ink'
+                : 'border-[#D9CBA8] bg-white hover:border-ink'
             }`}
           >
             {size}
@@ -64,12 +64,12 @@ export default function ProductPurchase({ productName, sizes }: Props) {
 
       <div className="mt-6">
         <p className="mb-3 text-xs font-medium uppercase tracking-[0.22em]">Cantidad</p>
-        <div className="inline-flex items-center border border-[#E6DCCD] bg-white">
+        <div className="inline-flex items-center border border-[#D9CBA8] bg-white">
           <button
             type="button"
             aria-label="Disminuir cantidad"
             onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-            className="flex size-12 items-center justify-center transition-colors hover:bg-[#F6EBD3]"
+            className="flex size-12 items-center justify-center transition-colors hover:bg-[#FFF4CC]"
           >
             <Minus size={16} />
           </button>
@@ -78,7 +78,7 @@ export default function ProductPurchase({ productName, sizes }: Props) {
             type="button"
             aria-label="Aumentar cantidad"
             onClick={() => setQuantity((q) => Math.min(10, q + 1))}
-            className="flex size-12 items-center justify-center transition-colors hover:bg-[#F6EBD3]"
+            className="flex size-12 items-center justify-center transition-colors hover:bg-[#FFF4CC]"
           >
             <Plus size={16} />
           </button>
@@ -89,14 +89,14 @@ export default function ProductPurchase({ productName, sizes }: Props) {
         <button
           type="button"
           onClick={handleAddToCart}
-          className="w-full bg-champagne px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] text-ink transition-colors hover:bg-[#d8b87f]"
+          className="w-full bg-sun px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] text-ink transition-colors hover:bg-[#ffd74a]"
         >
           Añadir al carrito
         </button>
         <button
           type="button"
           onClick={handleBuyNow}
-          className="w-full bg-ink px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] text-ivory transition-colors hover:bg-wine"
+          className="w-full bg-ink px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#2a2622]"
         >
           Comprar ahora
         </button>
@@ -106,10 +106,10 @@ export default function ProductPurchase({ productName, sizes }: Props) {
         <p
           role={feedback.type === 'error' ? 'alert' : 'status'}
           className={`mt-4 flex items-center gap-2 text-sm ${
-            feedback.type === 'error' ? 'text-wine' : 'text-ink'
+            feedback.type === 'error' ? 'text-red-700' : 'text-ink'
           }`}
         >
-          {feedback.type === 'success' && <Check size={18} className="text-gold-deep" />}
+          {feedback.type === 'success' && <Check size={18} className="text-sun-deep" />}
           {feedback.text}
         </p>
       )}
