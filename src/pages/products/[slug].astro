@@ -2,8 +2,10 @@
 import Layout from '../../layouts/Layout.astro';
 import ProductGallery from '../../components/product/ProductGallery.tsx';
 import ProductPurchase from '../../components/product/ProductPurchase.tsx';
+import ProductDetails from '../../components/product/ProductDetails.astro';
 import products from '../../data/products.json';
 import { formatPrice } from '../../utils/format';
+import { buildDetails } from '../../utils/product-details';
 
 export function getStaticPaths() {
   return products.map((product) => ({
@@ -14,6 +16,7 @@ export function getStaticPaths() {
 
 const { product } = Astro.props;
 const images = product.images?.length ? product.images : [product.image];
+const details = buildDetails(product);
 ---
 <Layout title={`${product.name} | Vanidiosas by Gonsa`}>
   <section class="mx-auto max-w-[1240px] px-8 py-12">
@@ -53,6 +56,8 @@ const images = product.images?.length ? product.images : [product.image];
         {product.sizes && (
           <ProductPurchase client:load productName={product.name} sizes={product.sizes} />
         )}
+
+        <ProductDetails items={details} />
       </div>
 
     </div>
