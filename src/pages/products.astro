@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import products from '../data/products.json';
+import { formatPrice } from '../utils/format';
+
+// Singular or plural depending on the amount
+const countLabel = `${products.length} ${products.length === 1 ? 'modelo' : 'modelos'}`;
+---
+
+<Layout title="Todos los productos | Vanidiosas by Gonsa">
+  <section class="bg-bone">
+    <div class="mx-auto max-w-[1240px] px-8 py-16">
+
+      <nav aria-label="Breadcrumb" class="mb-8 text-[13px] text-muted">
+        <a href="/" class="hover:text-ink">Inicio</a>
+        <span class="mx-2">/</span>
+        <span class="text-ink">Productos</span>
+      </nav>
+
+      <h1 class="font-display text-4xl font-medium md:text-5xl">Todos los productos</h1>
+      <div class="mb-4 mt-3.5 h-[3px] w-16 bg-sun"></div>
+      <p class="mb-10 text-sm text-muted">{countLabel}</p>
+
+      {products.length === 0 ? (
+        <p class="text-muted">Pronto tendremos nuevos modelos.</p>
+      ) : (
+        <ul class="grid grid-cols-2 gap-7 lg:grid-cols-4">
+          {products.map((product) => (
+            <li>
+              <a href={`/products/${product.slug}`} class="group block">
+                <div class="aspect-[4/5] overflow-hidden border border-b-[3px] border-[#EADFC9] border-b-sun bg-linear-to-b from-white to-[#FFF4CC]">
+                  <img
+                    src={product.image ?? product.images?.[0]}
+                    alt={product.name}
+                    loading="lazy"
+                    class="size-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <h3 class="mt-4 text-base">{product.name}</h3>
+
+                {/* Only show the rating row when the product has a rating */}
+                {product.rating ? (
+                  <p class="mt-1 text-[13px] tracking-widest text-sun-deep">
+                    {'★'.repeat(product.rating)}
+                    <span class="tracking-normal text-muted">({product.reviewCount ?? 0})</span>
+                  </p>
+                ) : null}
+
+                <p class="mt-1.5 text-[17px] font-medium">{formatPrice(product.price)}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+
+    </div>
+  </section>
+</Layout>
