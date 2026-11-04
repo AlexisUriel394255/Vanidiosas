@@ -1,14 +1,19 @@
 ---
 import products from '../../data/products.json';
 import { formatPrice } from '../../utils/format';
+
+// Show only the first 4 products in this section.
+// slice() returns a copy, so the original catalog is not modified
+const bestSellers = products.slice(0, 4);
 ---
+
 <section class="bg-bone">
   <div class="mx-auto max-w-[1240px] px-8 py-20">
     <h2 class="font-display text-4xl font-medium md:text-5xl">Lo más vendido</h2>
     <div class="mb-10 mt-3.5 h-[3px] w-16 bg-sun"></div>
 
     <div class="grid grid-cols-2 gap-7 lg:grid-cols-4">
-      {products.map((product) => (
+      {bestSellers.map((product) => (
         <a href={`/products/${product.slug}`} class="group block">
           <div class="aspect-[4/5] overflow-hidden border border-b-[3px] border-[#EADFC9] border-b-sun bg-linear-to-b from-white to-[#FFF4CC]">
             <img

@@ -1,38 +1,49 @@
 ---
-import { Search, User, ShoppingBag } from '@lucide/astro';
+import { User } from '@lucide/astro';
+import SearchDialog from './SearchDialog.tsx';
+import CartDrawer from './CartDrawer.tsx';
+import products from '../../data/products.json';
+
 const links = [
-{ label: 'Sandalias', href: '/coleccion/sandalias'},
-{ label: 'Zapatillas', href: '/coleccion/zapatillas'},
-{ label: 'Balerinas', href: '/coleccion/balerinas'},
-{ label: 'Lo mas vendido', href: '/coleccion/mas-vendido'},
-{ label: 'Lo mas nuevo', href: '/coleccion/nuevo'},
-{ label: 'Ver todo', href: '/productos'},
+  { label: 'Sandalias', href: '/collections/sandalias' },
+  { label: 'Zapatillas', href: '/collections/zapatillas' },
+  { label: 'Balerinas', href: '/collections/balerinas' },
+  { label: 'Lo mas vendido', href: '/collections/mas-vendido' },
+  { label: 'Lo mas nuevo', href: '/collections/nuevo' },
+  { label: 'Ver todo', href: '/products' },
 ];
+
+// Send only the fields the search needs, not the whole product
+const searchItems = products.map((product) => ({
+  slug: product.slug,
+  name: product.name,
+  price: product.price,
+  image: product.image ?? product.images?.[0],
+}));
 ---
 
-
-
 <header class="border-b border-[#E6DCCD] bg-ivory">
-<div class="mx-auto flex h-[84px] max-w-[1240px] items-center justify-between px-8">
-<a href="/" class="flex flex-col items-center leading-none">
-<span class="font-display text-4xl font-semibold tracking-tight">Vanidiosas</span>
-<span class="mt-1 text-[10px] tracking-[0.38em] text-muted">BY GONSA</span>
-</a>
-<nav class="hidden gap-8 text-sm tracking-wide lg:flex" aria-label"Principal">
-{links.map((link) =>(
- <a href={link.href} class="transition-colors hover:text-wine">{link.label}</a>
-))}
-</nav>
-<div class="flex gap-1">
-  <button aria-label="Buscar" class="flex size-11 items-center justify-center">
-    <Search size={22} strokeWidth={1.5} />
-  </button>
-  <button aria-label="Mi cuenta" class="flex size-11 items-center justify-center">
-    <User size={22} strokeWidth={1.5} />
-  </button>
-  <button aria-label="Carrito" class="flex size-11 items-center justify-center">
-    <ShoppingBag size={22} strokeWidth={1.5} />
-  </button>
-</div>
-</div>
+  <div class="mx-auto flex h-[84px] max-w-[1240px] items-center justify-between px-8">
+    <a href="/" class="flex flex-col items-center leading-none">
+      <span class="font-display text-4xl font-semibold tracking-tight">Vanidiosas</span>
+      <span class="mt-1 text-[10px] tracking-[0.38em] text-muted">BY GONSA</span>
+    </a>
+
+    <nav class="hidden gap-8 text-sm tracking-wide lg:flex" aria-label="Principal">
+      {links.map((link) => (
+        <a href={link.href} class="transition-colors hover:text-wine">{link.label}</a>
+      ))}
+    </nav>
+
+    <div class="flex gap-1">
+      <!-- React islands: they hydrate when the browser is idle -->
+      <SearchDialog client:idle products={searchItems} />
+
+      <a href="/Register" aria-label="Mi cuenta" class="flex size-11 items-center justify-center">
+        <User size={22} strokeWidth={1.5} />
+      </a>
+
+      <CartDrawer client:idle />
+    </div>
+  </div>
 </header>
