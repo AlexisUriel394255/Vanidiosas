@@ -3,10 +3,13 @@ import Layout from '../../layouts/Layout.astro';
 import ProductGallery from '../../components/product/ProductGallery.tsx';
 import ProductPurchase from '../../components/product/ProductPurchase.tsx';
 import ProductDetails from '../../components/product/ProductDetails.astro';
+import Recommendations from '../../components/product/Recommendations.astro';
+import ProductReviews from '../../components/product/ProductReviews.astro';
 import products from '../../data/products.json';
 import { formatPrice } from '../../utils/format';
 import { buildDetails } from '../../utils/product-details';
 
+// Astro calls this at build time to generate one static page per product
 export function getStaticPaths() {
   return products.map((product) => ({
     params: { slug: product.slug },
@@ -15,9 +18,12 @@ export function getStaticPaths() {
 }
 
 const { product } = Astro.props;
+
+// Some products have an `images` list, others only a single `image`
 const images = product.images?.length ? product.images : [product.image];
 const details = buildDetails(product);
 ---
+
 <Layout title={`${product.name} | Vanidiosas by Gonsa`}>
   <section class="mx-auto max-w-[1240px] px-8 py-12">
 
@@ -42,6 +48,7 @@ const details = buildDetails(product);
         <h1 class="font-display text-4xl font-medium leading-tight md:text-5xl">{product.name}</h1>
         <div class="mb-6 mt-4 h-[3px] w-16 bg-sun"></div>
 
+        <!-- Links to the reviews section below (needs id="reviews" there) -->
         <a href="#reviews" class="mb-6 flex items-center gap-2 text-sm">
           <span class="tracking-widest text-sun-deep">{'★'.repeat(product.rating)}</span>
           <span class="text-muted">({product.reviewCount} reseñas)</span>
@@ -54,12 +61,25 @@ const details = buildDetails(product);
         )}
 
         {product.sizes && (
-          <ProductPurchase client:load productName={product.name} sizes={product.sizes} />
+         
+          <ProductPurchase
+            client:load
+            productName={product.name}
+            sizes={product.sizes}
+            slug={product.slug}
+            price={product.price}
+            image={images[0]}
+          />
         )}
 
         <ProductDetails items={details} />
       </div>
 
     </div>
+
+    <!-- Both sections live below the grid, inside the same container -->
+    <Recommendations currentSlug={product.slug} category={product.category} />
+    <ProductReviews productSlug={product.slug} />
+
   </section>
 </Layout>

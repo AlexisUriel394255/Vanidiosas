@@ -14,11 +14,14 @@
   "dependencies": {
     "@astrojs/react": "^7.0.0",
     "@lucide/astro": "^1.49.0",
+    "@nanostores/persistent": "^1.3.5",
+    "@nanostores/react": "^2.0.1",
     "@tailwindcss/vite": "^4.3.3",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "astro": "^7.3.5",
     "lucide-react": "^1.48.0",
+    "nanostores": "^1.5.5",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "tailwindcss": "^4.3.3"

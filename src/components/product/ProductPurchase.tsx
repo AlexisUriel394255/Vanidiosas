@@ -1,14 +1,18 @@
 import { useState } from 'react';
 import { Minus, Plus, Check } from 'lucide-react';
+import { MAX_QUANTITY, addToCart, openCart } from '../../stores/cart';
 
 type Props = {
   productName: string;
   sizes: string[];
+  slug: string;
+  price: number;
+  image?: string;
 };
 
 type Feedback = { type: 'error' | 'success'; text: string };
 
-export default function ProductPurchase({ productName, sizes }: Props) {
+export default function ProductPurchase({ productName, sizes, slug, price, image }: Props) {
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const [quantity, setQuantity] = useState(1);
   const [feedback, setFeedback] = useState<Feedback | null>(null);
@@ -18,25 +22,38 @@ export default function ProductPurchase({ productName, sizes }: Props) {
     setFeedback(null);
   }
 
-  function hasSize(): boolean {
+  // Validates the size and adds the selection to the shared cart.
+  // Returns true when the product was added
+  function addSelectionToCart(): boolean {
     if (!selectedSize) {
       setFeedback({ type: 'error', text: 'Selecciona tu talla para continuar.' });
       return false;
     }
+
+    // Inside this `if` check, TypeScript knows selectedSize is a string
+    addToCart({ slug, name: productName, price, image, size: selectedSize }, quantity);
     return true;
   }
 
   function handleAddToCart() {
-    if (!hasSize()) return;
+    if (!addSelectionToCart()) return;
+
     setFeedback({
       type: 'success',
       text: `${quantity} × ${productName}, talla ${selectedSize}, añadido al carrito.`,
     });
+    // Reset so the next click does not add the same amount again by accident
+    setQuantity(1);
+    openCart();
   }
 
   function handleBuyNow() {
-    if (!hasSize()) return;
-    setFeedback({ type: 'success', text: 'Demo: aquí se continuaría al pago.' });
+    if (!addSelectionToCart()) return;
+
+    // TODO: redirect to /checkout when that page exists
+    setFeedback(null);
+    setQuantity(1);
+    openCart();
   }
 
   return (
@@ -77,7 +94,7 @@ export default function ProductPurchase({ productName, sizes }: Props) {
           <button
             type="button"
             aria-label="Aumentar cantidad"
-            onClick={() => setQuantity((q) => Math.min(10, q + 1))}
+            onClick={() => setQuantity((q) => Math.min(MAX_QUANTITY, q + 1))}
             className="flex size-12 items-center justify-center transition-colors hover:bg-[#FFF4CC]"
           >
             <Plus size={16} />

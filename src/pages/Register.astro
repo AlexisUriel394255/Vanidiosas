@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RegisterForm from '../components/auth/RegisterForm.tsx';
+---
+
+<Layout title="Crear cuenta | Vanidiosas by Gonsa">
+  <section class="bg-bone">
+    <div class="mx-auto max-w-[480px] px-8 py-16">
+      <h1 class="font-display text-4xl font-medium md:text-5xl">Crear cuenta</h1>
+      <div class="mb-8 mt-3.5 h-[3px] w-16 bg-sun"></div>
+
+      <!-- React island: only the form ships JavaScript -->
+      <RegisterForm client:load />
+
+      <p class="mt-8 text-sm text-muted">
+        ¿Ya tienes cuenta? <a href="/login" class="text-ink underline">Inicia sesión</a>
+      </p>
+    </div>
+  </section>
+</Layout>
