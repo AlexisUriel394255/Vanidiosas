@@ -10,7 +10,7 @@ export default function ProductGallery({ images, name }: Props) {
 
   return (
     <div>
-      <div className="aspect-[4/5] overflow-hidden border border-b-[3px] border-[#EADFC9] border-b-sun bg-linear-to-b from-white to-[#FFF4CC]">
+      <div className="aspect-[4/5] overflow-hidden border border-b-[3px] border border-[#EADFC9] bg-white">
         <img
           src={images[activeIndex]}
           alt={`${name}, foto ${activeIndex + 1} de ${images.length}`}

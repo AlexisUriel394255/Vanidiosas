@@ -9,13 +9,20 @@
       "/images/products/6077-SNAKE-CABRA-METAL-ORO/6077-SNAKE-CABRA-METAL-ORO-3.webp",
       "/images/products/6077-SNAKE-CABRA-METAL-ORO/6077-snake-cabra-metal-oro-5.webp",
       "/images/products/6077-SNAKE-CABRA-METAL-ORO/6077-SNAKE-CABRA-METAL-ORO-6.webp",
-       "/images/products/6077-SNAKE-CABRA-METAL-ORO/6077-SNAKE-CABRA-METAL-ORO-7.webp"
+      "/images/products/6077-SNAKE-CABRA-METAL-ORO/6077-SNAKE-CABRA-METAL-ORO-7.webp"
     ],
     "rating": 5,
     "reviewCount": 8,
     "sku": "6077",
     "description": "Sandalia dorada de tacón ancho con tiras ajustables y detalles brillantes.",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
     "slug": "perlas-cabra-maquillaje",
@@ -30,12 +37,19 @@
       "/images/products/6077-PERLAS-CABRA-MAQUILLAJE/6077-PERLAS-CABRA-MAQUILLAJE-5.webp",
       "/images/products/6077-PERLAS-CABRA-MAQUILLAJE/6077-PERLAS-CABRA-MAQUILLAJE-6.webp",
       "/images/products/6077-PERLAS-CABRA-MAQUILLAJE/6077-PERLAS-CABRA-MAQUILLAJE-7.webp"
-  ],
+    ],
     "rating": 5,
     "reviewCount": 7,
     "sku": "6077",
     "description": "Sandalia color maquillaje de tacón ancho con tiras ajustables y detalles brillantes.",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
     "slug": "snake-buck-negro",
@@ -50,35 +64,80 @@
       "/images/products/6077-SNAKE-BUCK-NEGRO/6077-SNAKE-BUCK-NEGRO-5.webp",
       "/images/products/6077-SNAKE-BUCK-NEGRO/6077-SNAKE-BUCK-NEGRO-6.webp",
       "/images/products/6077-SNAKE-BUCK-NEGRO/6077-SNAKE-BUCK-NEGRO-7.webp"
-  ],
+    ],
     "rating": 5,
     "reviewCount": 6,
     "sku": "6077",
     "description": "Sandalia de tacón ancho con tiras ajustables y detalles brillantes.",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6195-buck-negro",
-    "name":"6195 Buck Negro",
-    "price":1599,
-    "image":"/images/products/6195-BUCK-NEGRO/6195-BUCK-NEGRO-1.webp",
-    "images":[
+    "slug": "6077-snake-napa-metal-oro-rosado",
+    "name": "6077 Snake Napa Metal Oro Rosado",
+    "price": 1599,
+    "image": "/images/products/6077-SNAKE-NAPA-METAL-ORO-ROSADO/6077-SNAKE-NAPA-METAL-ORO-ROSADO-1.webp",
+    "images": [
+      "/images/products/6077-SNAKE-NAPA-METAL-ORO-ROSADO/6077-SNAKE-NAPA-METAL-ORO-ROSADO-1.webp",
+      "/images/products/6077-SNAKE-NAPA-METAL-ORO-ROSADO/6077-SNAKE-NAPA-METAL-ORO-ROSADO-2.webp",
+      "/images/products/6077-SNAKE-NAPA-METAL-ORO-ROSADO/6077-SNAKE-NAPA-METAL-ORO-ROSADO-3.webp",
+      "/images/products/6077-SNAKE-NAPA-METAL-ORO-ROSADO/6077-SNAKE-NAPA-METAL-ORO-ROSADO-4.webp",
+      "/images/products/6077-SNAKE-NAPA-METAL-ORO-ROSADO/6077-SNAKE-NAPA-METAL-ORO-ROSADO-5.webp",
+      "/images/products/6077-SNAKE-NAPA-METAL-ORO-ROSADO/6077-SNAKE-NAPA-METAL-ORO-ROSADO-6.webp",
+      "/images/products/6077-SNAKE-NAPA-METAL-ORO-ROSADO/6077-SNAKE-NAPA-METAL-ORO-ROSADO-7.webp"
+    ],
+    "rating": 5,
+    "reviewCount": 6,
+    "sku": "6077",
+    "description": "Sandalia de Tacón Bloque Oro Rosa con Tiras de Cadena y Estrás",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "slug": "6195-buck-negro",
+    "name": "6195 Buck Negro",
+    "price": 1599,
+    "image": "/images/products/6195-BUCK-NEGRO/6195-BUCK-NEGRO-1.webp",
+    "images": [
       "/images/products/6195-BUCK-NEGRO/6195-BUCK-NEGRO-1.webp",
       "/images/products/6195-BUCK-NEGRO/6195-BUCK-NEGRO-2.webp",
-      "/images/products/6195-BUCK-NEGRO/6195-BUCK-NEGRO-3.webp"
+      "/images/products/6195-BUCK-NEGRO/6195-BUCK-NEGRO-3.webp",
+      "/images/products/6195-BUCK-NEGRO/6195-BUCK-NEGRO-4.webp",
+      "/images/products/6195-BUCK-NEGRO/6195-BUCK-NEGRO-5.webp",
+      "/images/products/6195-BUCK-NEGRO/6195-BUCK-NEGRO-6.webp",
+      "/images/products/6195-BUCK-NEGRO/6195-BUCK-NEGRO-7.webp"
     ],
-    "rating":6,
-    "reviewCount":7,
-    "sku":6195,
-    "description":"Sandalia de Tacón Bloque con Tiras de Estrás y Tobillera en Espiral",
-     "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 7,
+    "sku": "6195",
+    "description": "Sandalia de Tacón Bloque con Tiras de Estrás y Tobillera en Espiral",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6284-buck-negro",
-    "name":"6284 Buck Negro",
-    "price":1599,
-    "image":"/images/products/6284-BUCK-NEGRO/6284-BUCK-NEGRO-1.webp",
-    "images":[
+    "slug": "6284-buck-negro",
+    "name": "6284 Buck Negro",
+    "price": 1599,
+    "image": "/images/products/6284-BUCK-NEGRO/6284-BUCK-NEGRO-1.webp",
+    "images": [
       "/images/products/6284-BUCK-NEGRO/6284-BUCK-NEGRO-1.webp",
       "/images/products/6284-BUCK-NEGRO/6284-BUCK-NEGRO-2.webp",
       "/images/products/6284-BUCK-NEGRO/6284-BUCK-NEGRO-3.webp",
@@ -87,38 +146,52 @@
       "/images/products/6284-BUCK-NEGRO/6284-BUCK-NEGRO-6.webp",
       "/images/products/6284-BUCK-NEGRO/6284-BUCK-NEGRO-7.webp"
     ],
-    "rating":5,
-    "reviewCount":6,
-    "sku":"6284",
-    "description":"Sandalias de Tacón Alto con Moño de Brillos y Correa al Tobillo",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 6,
+    "sku": "6284",
+    "description": "Sandalias de Tacón Alto con Moño de Brillos y Correa al Tobillo",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-     "slug":"6284-cabra-maquillaje",
-     "name":"6284 Cabra Maquillaje",
-     "price":1599,
-     "image":"/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-1.webp",
-     "images":[
-          "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-1.webp",
-          "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-2.webp",
-          "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-3.webp",
-          "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-4.webp",
-          "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-5.webp",
-          "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-6.webp",
-          "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-7.webp"
-     ],
-     "rating":6,
-     "reviewCount":7,
-     "sku":"6284",
-     "description":"Sandalias de Tacón Alto con Moño de Brillos y Correa al Tobillo – Tono Palo de Rosa / Nude",
-     "sizes":["23", "24", "25", "26", "27"]
+    "slug": "6284-cabra-maquillaje",
+    "name": "6284 Cabra Maquillaje",
+    "price": 1599,
+    "image": "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-1.webp",
+    "images": [
+      "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-1.webp",
+      "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-2.webp",
+      "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-3.webp",
+      "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-4.webp",
+      "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-5.webp",
+      "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-6.webp",
+      "/images/products/6284-CABRA-MAQUILLAJE/6284-CABRA-MAQUILLAJE-7.webp"
+    ],
+    "rating": 5,
+    "reviewCount": 7,
+    "sku": "6284",
+    "description": "Sandalias de Tacón Alto con Moño de Brillos y Correa al Tobillo – Tono Palo de Rosa / Nude",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6291-buck-negro",
-    "name":"6291 Buck Negro",
-    "price":1599,
-    "image":"/images/products/6291-BUCK-NEGRO/6291-BUCK-NEGRO-1.webp",
-    "images":[
+    "slug": "6291-buck-negro",
+    "name": "6291 Buck Negro",
+    "price": 1599,
+    "image": "/images/products/6291-BUCK-NEGRO/6291-BUCK-NEGRO-1.webp",
+    "images": [
       "/images/products/6291-BUCK-NEGRO/6291-BUCK-NEGRO-1.webp",
       "/images/products/6291-BUCK-NEGRO/6291-BUCK-NEGRO-2.webp",
       "/images/products/6291-BUCK-NEGRO/6291-BUCK-NEGRO-3.webp",
@@ -127,18 +200,25 @@
       "/images/products/6291-BUCK-NEGRO/6291-BUCK-NEGRO-6.webp",
       "/images/products/6291-BUCK-NEGRO/6291-BUCK-NEGRO-7.webp"
     ],
-    "rating":5,
-    "reviewCount":6,
-    "sku":"6291",
-    "description":"Sandalias de Tacón Alto con Doble Tira de Brillos y Plantilla de Piel",
-     "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 6,
+    "sku": "6291",
+    "description": "Sandalias de Tacón Alto con Doble Tira de Brillos y Plantilla de Piel",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6291-cabra-metal-plata",
-    "name":"6291 Cabra Metal Plata",
-    "price":1599,
-    "image":"/images/products/6291-CABRA-METAL-PLATA/6291-NAPA METAL-PLATA-1.webp",
-    "images":[
+    "slug": "6291-cabra-metal-plata",
+    "name": "6291 Cabra Metal Plata",
+    "price": 1599,
+    "image":   "/images/products/6291-CABRA-METAL-PLATA/6291-NAPA METAL-PLATA-1.webp",
+    "images": [
       "/images/products/6291-CABRA-METAL-PLATA/6291-NAPA METAL-PLATA-1.webp",
       "/images/products/6291-CABRA-METAL-PLATA/6291-NAPA-METAL-PLATA-2.webp",
       "/images/products/6291-CABRA-METAL-PLATA/6291-NAPA-METAL-PLATA-3.webp",
@@ -147,18 +227,25 @@
       "/images/products/6291-CABRA-METAL-PLATA/6291-NAPA METAL-PLATA-6.webp",
       "/images/products/6291-CABRA-METAL-PLATA/6291-NAPA-METAL-PLATA-7.webp"
     ],
-    "rating":6,
-    "reviewCount":7,
-    "sku":"6291",
-    "description":"Sandalias de Tacón Alto Plateadas con Doble Tira de Brillos y Plantilla de Piel",
-     "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 7,
+    "sku": "6291",
+    "description": "Sandalias de Tacón Alto Plateadas con Doble Tira de Brillos y Plantilla de Piel",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6291-napa-metal-oro-rosado",
-    "name":"6291 Napa Metal oro Rosado",
-    "price":1599,
-    "image":"/images/products/6291-NAPA-METAL-ORO-ROSADO/6291-NAPA-METAL-ORO-ROSADO-1.webp",
-    "images":[
+    "slug": "6291-napa-metal-oro-rosado",
+    "name": "6291 Napa Metal oro Rosado",
+    "price": 1599,
+    "image": "/images/products/6291-NAPA-METAL-ORO-ROSADO/6291-NAPA-METAL-ORO-ROSADO-1.webp",
+    "images": [
       "/images/products/6291-NAPA-METAL-ORO-ROSADO/6291-NAPA-METAL-ORO-ROSADO-1.webp",
       "/images/products/6291-NAPA-METAL-ORO-ROSADO/6291-NAPA-METAL-ORO-ROSADO-2.webp",
       "/images/products/6291-NAPA-METAL-ORO-ROSADO/6291-NAPA-METAL-ORO-ROSADO-3.webp",
@@ -167,38 +254,52 @@
       "/images/products/6291-NAPA-METAL-ORO-ROSADO/6291-NAPA-METAL-ORO-ROSADO-6.webp",
       "/images/products/6291-NAPA-METAL-ORO-ROSADO/6291-NAPA-METAL-ORO-ROSADO-7.webp"
     ],
-    "rating":5,
-    "reviewCount":6,
-    "sku":"6291",
-    "description":"Sandalias de Tacón Alto Oro Rosa con Doble Tira de Brillos y Plantilla de Piel",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 6,
+    "sku": "6291",
+    "description": "Sandalias de Tacón Alto Oro Rosa con Doble Tira de Brillos y Plantilla de Piel",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6295-buck-negro",
-    "name":"6295 Buck Negro",
-    "price":1599,
-    "image":"/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-1.webp",
-    "images":[
-        "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-1.webp",
-        "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-2.webp",
-        "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-3.webp",
-        "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-4.webp",
-        "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-5.webp",
-        "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-6.webp",
-        "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-7.webp"
+    "slug": "6295-buck-negro",
+    "name": "6295 Buck Negro",
+    "price": 1599,
+    "image": "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-1.webp",
+    "images": [
+      "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-1.webp",
+      "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-2.webp",
+      "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-3.webp",
+      "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-4.webp",
+      "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-5.webp",
+      "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-6.webp",
+      "/images/products/6295-BUCK-NEGRO/6295-BUCK-NEGRO-7.webp"
     ],
-    "rating":6,
-    "reviewCount":7,
-    "sku":"6295",
-    "description":"Sandalias de Tacón Alto Negras con Moño de Brillos y Pulsera al Tobillo",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 7,
+    "sku": "6295",
+    "description": "Sandalias de Tacón Alto Negras con Moño de Brillos y Pulsera al Tobillo",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6295-cabra-latte",
-    "name":"6295 Cabra Latte",
-    "price":1599,
-    "image":"/images/products/6295-CABRA-LATTE/6295-CABRA-LATTE-1.webp",
-    "images":[
+    "slug": "6295-cabra-latte",
+    "name": "6295 Cabra Latte",
+    "price": 1599,
+    "image": "/images/products/6295-CABRA-LATTE/6295-CABRA-LATTE-1.webp",
+    "images": [
       "/images/products/6295-CABRA-LATTE/6295-CABRA-LATTE-1.webp",
       "/images/products/6295-CABRA-LATTE/6295-CABRA-LATTE-2.webp",
       "/images/products/6295-CABRA-LATTE/6295-CABRA-LATTE-3.webp",
@@ -207,18 +308,25 @@
       "/images/products/6295-CABRA-LATTE/6295-CABRA-LATTE-6.webp",
       "/images/products/6295-CABRA-LATTE/6295-CABRA-LATTE-7.webp"
     ],
-    "rating":6,
-    "reviewCount":8,
-    "sku":"6295",
-    "description":"Sandalias de Tacón Alto Marfil con Moño de Brillos y Pulsera al Tobillo",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 8,
+    "sku": "6295",
+    "description": "Sandalias de Tacón Alto Marfil con Moño de Brillos y Pulsera al Tobillo",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6295-CABRA-MAQUILLAJE",
-    "name":"6295 Cabra Maquillaje",
-    "price":1599,
-    "image":"/images/products/6295-CABRA-MAQUILLAJE/6295-CABRA-MAQUILLAJE-1.webp",
-    "images":[
+    "slug": "6295-cabra-maquillaje",
+    "name": "6295 Cabra Maquillaje",
+    "price": 1599,
+    "image": "/images/products/6295-CABRA-MAQUILLAJE/6295-CABRA-MAQUILLAJE-1.webp",
+    "images": [
       "/images/products/6295-CABRA-MAQUILLAJE/6295-CABRA-MAQUILLAJE-1.webp",
       "/images/products/6295-CABRA-MAQUILLAJE/6295-CABRA-MAQUILLAJE-2.webp",
       "/images/products/6295-CABRA-MAQUILLAJE/6295-CABRA-MAQUILLAJE-3.webp",
@@ -227,38 +335,52 @@
       "/images/products/6295-CABRA-MAQUILLAJE/6295-CABRA-MAQUILLAJE-6.webp",
       "/images/products/6295-CABRA-MAQUILLAJE/6295-CABRA-MAQUILLAJE-7.webp"
     ],
-    "rating":6,
-    "reviewCount":8,
-    "sku":"6295",
-    "description":"Sandalias de Tacón Alto Palo de Rosa con Moño de Brillos y Pulsera al Tobillo",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 8,
+    "sku": "6295",
+    "description": "Sandalias de Tacón Alto Palo de Rosa con Moño de Brillos y Pulsera al Tobillo",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6296-cabra-metal-oro",
-    "name":"6296 Cabra Metal Oro",
-    "price":1599,
-    "image":"/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-1.webp",
-    "images":[
-        "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-1.webp",
-        "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-2.webp",
-        "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-3.webp",
-        "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-4.webp",
-        "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-5.webp",
-        "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-6.webp",
-        "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-7.webp"
+    "slug": "6296-cabra-metal-oro",
+    "name": "6296 Cabra Metal Oro",
+    "price": 1599,
+    "image": "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-1.webp",
+    "images": [
+      "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-1.webp",
+      "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-2.webp",
+      "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-3.webp",
+      "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-4.webp",
+      "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-5.webp",
+      "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-6.webp",
+      "/images/products/6296-CABRA-METAL-ORO/6296-NAPA-METAL-ORO-7.webp"
     ],
-    "rating":5,
-    "reviewCount":7,
-    "sku":"6296",
-    "description":"Sandalias de Tacón Alto Doradas con Tira Trenzada de Brillos y Plantilla de Piel",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 7,
+    "sku": "6296",
+    "description": "Sandalias de Tacón Alto Doradas con Tira Trenzada de Brillos y Plantilla de Piel",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6296-buck-negro",
-    "name":"6296 Buck Negro",
-    "price":1599,
-    "image":"/images/products/6296-BUCK-NEGRO/6296-BUCK-NEGRO-1.webp",
-    "images":[
+    "slug": "6296-buck-negro",
+    "name": "6296 Buck Negro",
+    "price": 1599,
+    "image": "/images/products/6296-BUCK-NEGRO/6296-BUCK-NEGRO-1.webp",
+    "images": [
       "/images/products/6296-BUCK-NEGRO/6296-BUCK-NEGRO-1.webp",
       "/images/products/6296-BUCK-NEGRO/6296-BUCK-NEGRO-2.webp",
       "/images/products/6296-BUCK-NEGRO/6296-BUCK-NEGRO-3.webp",
@@ -267,38 +389,52 @@
       "/images/products/6296-BUCK-NEGRO/6296-BUCK-NEGRO-6.webp",
       "/images/products/6296-BUCK-NEGRO/6296-BUCK-NEGRO-7.webp"
     ],
-    "rating":5,
-    "reviewCount":6,
-    "sku":"6297",
-    "description":"Sandalias de Tacón Alto Negras con Tira Trenzada de Brillos y Plantilla de Piel",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 6,
+    "sku": "6296",
+    "description": "Sandalias de Tacón Alto Negras con Tira Trenzada de Brillos y Plantilla de Piel",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6297-Napa-Metal-Oro",
-    "name":"6297 Napa Metal Oro",
-    "price":1599,
-    "image":"/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-1.webp",
-    "images":[
-        "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-1.webp",
-        "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-2.webp",
-        "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-3.webp",
-        "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-4.webp",
-        "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-5.webp",
-        "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-6.webp",
-        "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-7.webp"
+    "slug": "6297-napa-metal-oro",
+    "name": "6297 Napa Metal Oro",
+    "price": 1599,
+    "image": "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-1.webp",
+    "images": [
+      "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-1.webp",
+      "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-2.webp",
+      "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-3.webp",
+      "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-4.webp",
+      "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-5.webp",
+      "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-6.webp",
+      "/images/products/6297-NAPA-METAL-ORO/6297-NAPA-METAL-ORO-7.webp"
     ],
-    "rating":5,
-    "reviewCount":7,
-    "sku":"6297",
-    "description":"Sandalias de Tacón Alto Doradas con Tira Trenzada de Brillos y Plantilla de Piel",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 7,
+    "sku": "6297",
+    "description": "Sandalias de Tacón Alto Doradas con Tira Trenzada de Brillos y Plantilla de Piel",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6297-Napa-Metal-Plata",
-    "name":"6297 Napa Metal Plata",
-    "price":1599,
-    "image":"/images/products/6297-NAPA-METAL-PLATA/6297-NAPA-METAL-PLATA-1.webp",
-    "images":[
+    "slug": "6297-napa-metal-plata",
+    "name": "6297 Napa Metal Plata",
+    "price": 1599,
+    "image": "/images/products/6297-NAPA-METAL-PLATA/6297-NAPA-METAL-PLATA-1.webp",
+    "images": [
       "/images/products/6297-NAPA-METAL-PLATA/6297-NAPA-METAL-PLATA-1.webp",
       "/images/products/6297-NAPA-METAL-PLATA/6297-NAPA-METAL-PLATA-2.webp",
       "/images/products/6297-NAPA-METAL-PLATA/6297-NAPA-METAL-PLATA-3.webp",
@@ -307,18 +443,25 @@
       "/images/products/6297-NAPA-METAL-PLATA/6297-NAPA-METAL-PLATA-6.webp",
       "/images/products/6297-NAPA-METAL-PLATA/6297-NAPA-METAL-PLATA-7.webp"
     ],
-    "rating":6,
-    "reviewCount":7,
-    "sku":"6297",
-    "description":"Sandalias de Tacón Alto Plateadas con Tiras Cruzadas de Brillos y Pulsera al Tobillo",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 7,
+    "sku": "6297",
+    "description": "Sandalias de Tacón Alto Plateadas con Tiras Cruzadas de Brillos y Pulsera al Tobillo",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"6297-buck-negro",
-    "name":"6297 Buck Negro",
-    "price":1599,
-    "image":"/images/products/6297-BUCK-NEGRO/6297-BUCK-NEGRO-1.webp",
-    "images":[
+    "slug": "6297-buck-negro",
+    "name": "6297 Buck Negro",
+    "price": 1599,
+    "image": "/images/products/6297-BUCK-NEGRO/6297-BUCK-NEGRO-1.webp",
+    "images": [
       "/images/products/6297-BUCK-NEGRO/6297-BUCK-NEGRO-1.webp",
       "/images/products/6297-BUCK-NEGRO/6297-BUCK-NEGRO-2.webp",
       "/images/products/6297-BUCK-NEGRO/6297-BUCK-NEGRO-3.webp",
@@ -327,30 +470,255 @@
       "/images/products/6297-BUCK-NEGRO/6297-BUCK-NEGRO-6.webp",
       "/images/products/6297-BUCK-NEGRO/6297-BUCK-NEGRO-7.webp"
     ],
-    "rating":5,
-    "reviewCount":6,
-    "sku":"6297",
-    "description":"Sandalias de Tacón Alto Negras con Doble Tira de Brillos Cruzada y Plantilla de Piel",
-     "sizes": ["23", "24", "25", "26", "27"]
+    "rating": 5,
+    "reviewCount": 6,
+    "sku": "6297",
+    "description": "Sandalias de Tacón Alto Negras con Doble Tira de Brillos Cruzada y Plantilla de Piel",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   },
   {
-    "slug":"charol-azul-marino",
+    "slug": "charol-azul-marino",
     "name": "10161 Charol Azul Marino",
-    "price":1599,
-    "image":"/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-1.webp",
-    "images":[
-        "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-1.webp",
-        "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-2.webp",
-        "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-3.webp",
-        "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-4.webp",
-        "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-5.webp",
-        "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-6.webp",
-        "/images/products/10161-charol-azul-marino/10161-charol-azul-marino_7.webp"  
+    "price": 1599,
+    "image": "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-1.webp",
+    "images": [
+      "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-1.webp",
+      "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-2.webp",
+      "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-3.webp",
+      "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-4.webp",
+      "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-5.webp",
+      "/images/products/10161-charol-azul-marino/10161-CHAROL-AZUL-MARINO-6.webp",
+      "/images/products/10161-charol-azul-marino/10161-charol-azul-marino_7.webp"
     ],
-     "rating": 5,
+    "rating": 5,
     "reviewCount": 6,
     "sku": "10161",
     "description": "Zapatillas de Tacón Alto con Plataforma en Charol Azul Marino",
-    "sizes": ["23", "24", "25", "26", "27"]
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "slug": "6077-perlas-buck-negro",
+    "name": "6077 Perlas Buck Negro",
+    "price": 1599,
+    "image": "/images/products/6077-perlas-buck-negro/6077-perlas-buck-negro-5.webp",
+    "images": [
+      "/images/products/6077-perlas-buck-negro/6077-perlas-buck-negro-5.webp",
+      "/images/products/6077-perlas-buck-negro/6077-perlas-buck-negro-6.webp",
+      "/images/products/6077-perlas-buck-negro/6077-SNAKE-BUCK-NEGRO-1.webp",
+      "/images/products/6077-perlas-buck-negro/6077-SNAKE-BUCK-NEGRO-3.webp"
+    ],
+    "rating": 5,
+    "reviewCount": 0,
+    "sku": "6077",
+    "description": "Sandalia negra de tacón ancho en acabado buck con detalles de perlas que aportan un toque elegante. Tiras ajustables para un calce cómodo y seguro, ideal para eventos y looks de noche.",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "slug": "6077-perlas-cabra-latte",
+    "name": "6077 Perlas Cabra Latte",
+    "price": 1599,
+    "image": "/images/products/6077-PERLAS-CABRA-LATTE/6077-PERLAS-CABRA-LATTE-1.webp",
+    "images": [
+      "/images/products/6077-PERLAS-CABRA-LATTE/6077-PERLAS-CABRA-LATTE-1.webp",
+      "/images/products/6077-PERLAS-CABRA-LATTE/6077-PERLAS-CABRA-LATTE-2.webp",
+      "/images/products/6077-PERLAS-CABRA-LATTE/6077-PERLAS-CABRA-LATTE-3.webp",
+      "/images/products/6077-PERLAS-CABRA-LATTE/6077-PERLAS-CABRA-LATTE-4.webp",
+      "/images/products/6077-PERLAS-CABRA-LATTE/6077-PERLAS-CABRA-LATTE-5.webp",
+      "/images/products/6077-PERLAS-CABRA-LATTE/6077-PERLAS-CABRA-LATTE-6.webp",
+      "/images/products/6077-PERLAS-CABRA-LATTE/6077-PERLAS-CABRA-LATTE-7.webp"
+    ],
+    "rating": 5,
+    "reviewCount": 0,
+    "sku": "6077",
+    "description": "Sandalia de tacón ancho en tono latte con delicados detalles de perlas y tiras ajustables. Un neutro versátil y sofisticado que combina con todo tu guardarropa.",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "slug": "6077-piedra-buck-negro",
+    "name": "6077 Piedra Buck Negro",
+    "price": 1599,
+    "image": "/images/products/6077-PIEDRA-BUCK-NEGRO/6077-PIEDRA-BUCK-NEGRO-1.webp",
+    "images": [
+      "/images/products/6077-PIEDRA-BUCK-NEGRO/6077-PIEDRA-BUCK-NEGRO-1.webp",
+      "/images/products/6077-PIEDRA-BUCK-NEGRO/6077-PIEDRA-BUCK-NEGRO-2.webp",
+      "/images/products/6077-PIEDRA-BUCK-NEGRO/6077-PIEDRA-BUCK-NEGRO-3.webp",
+      "/images/products/6077-PIEDRA-BUCK-NEGRO/6077-PIEDRA-BUCK-NEGRO-5.webp",
+      "/images/products/6077-PIEDRA-BUCK-NEGRO/6077-PIEDRA-BUCK-NEGRO-6.webp",
+      "/images/products/6077-PIEDRA-BUCK-NEGRO/6077-PIEDRA-BUCK-NEGRO-7.webp"
+    ],
+    "rating": 5,
+    "reviewCount": 0,
+    "sku": "6077",
+    "description": "Sandalia negra de tacón ancho con brillantes piedras decorativas y tiras ajustables. Combina comodidad y glamour para destacar en cualquier ocasión especial.",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "slug": "6077-piedra-napa-metal-inox",
+    "name": "6077 Piedra Napa Metal Inox",
+    "price": 1599,
+    "image": "/images/products/6077-PIEDRA-NAPA-METAL-INOX/6077-PIEDRA-NAPA-METAL-INOX-1.webp",
+    "images": [
+      "/images/products/6077-PIEDRA-NAPA-METAL-INOX/6077-PIEDRA-NAPA-METAL-INOX-1.webp",
+      "/images/products/6077-PIEDRA-NAPA-METAL-INOX/6077-PIEDRA-NAPA-METAL-INOX-2.webp",
+      "/images/products/6077-PIEDRA-NAPA-METAL-INOX/6077-PIEDRA-NAPA-METAL-INOX-3.webp",
+      "/images/products/6077-PIEDRA-NAPA-METAL-INOX/6077-PIEDRA-NAPA -METAL-INOX-4.webp",
+      "/images/products/6077-PIEDRA-NAPA-METAL-INOX/6077-PIEDRA-NAPA-METAL-INOX-5.webp",
+      "/images/products/6077-PIEDRA-NAPA-METAL-INOX/6077-PIEDRA-NAPA-METAL-INOX-6.webp",
+      "/images/products/6077-PIEDRA-NAPA-METAL-INOX/6077-PIEDRA-NAPA-METAL-INOX-7.webp"
+    ],
+    "rating": 5,
+    "reviewCount": 0,
+    "sku": "6077",
+    "description": "Sandalia de tacón ancho en acabado metálico inox con piedras brillantes y tiras ajustables. Un diseño moderno y luminoso que eleva tus outfits de fiesta.",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "slug": "6130-buck-negro",
+    "name": "6130 Buck Negro",
+    "price": 1599,
+    "image": "/images/products/6130-BUCK-NEGRO/6130-BUCK-NEGRO-1.webp",
+    "images": [
+      "/images/products/6130-BUCK-NEGRO/6130-BUCK-NEGRO-1.webp",
+      "/images/products/6130-BUCK-NEGRO/6130-BUCK-NEGRO-2.webp",
+      "/images/products/6130-BUCK-NEGRO/6130-BUCK-NEGRO-3.webp",
+      "/images/products/6130-BUCK-NEGRO/6130-BUCK-NEGRO-4.webp",
+      "/images/products/6130-BUCK-NEGRO/6130-BUCK-NEGRO-5.webp",
+      "/images/products/6130-BUCK-NEGRO/6130-BUCK-NEGRO-6.webp",
+      "/images/products/6130-BUCK-NEGRO/6130-BUCK-NEGRO-7.webp"
+    ],
+    "rating": 5,
+    "reviewCount": 0,
+    "sku": "6130",
+    "description": "Sandalia negra en piel buck de acabado suave y diseño estilizado. Un básico elegante y cómodo que se adapta del trabajo a la noche.",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "slug": "6130-cabra-metal-plata",
+    "name": "6130 Cabra Metal Plata",
+    "price": 1599,
+    "image": "/images/products/6130-CABRA-METAL-PLATA/6130-NAPA-METAL-PLATA-1.webp",
+    "images": [
+      "/images/products/6130-CABRA-METAL-PLATA/6130-NAPA-METAL-PLATA-1.webp",
+      "/images/products/6130-CABRA-METAL-PLATA/6130-NAPA-METAL-PLATA-2.webp",
+      "/images/products/6130-CABRA-METAL-PLATA/6130-NAPA-METAL-PLATA-3.webp",
+      "/images/products/6130-CABRA-METAL-PLATA/6130-NAPA-METAL-PLATA-4.webp",
+      "/images/products/6130-CABRA-METAL-PLATA/6130-NAPA-METAL-PLATA-5.webp",
+      "/images/products/6130-CABRA-METAL-PLATA/6130-NAPA-METAL-PLATA-6.webp",
+      "/images/products/6130-CABRA-METAL-PLATA/6130-NAPA-METAL-PLATA-7.webp"
+    ],
+    "rating": 5,
+    "reviewCount": 0,
+    "sku": "6130",
+    "description": "Sandalia plateada en piel con acabado metálico que refleja la luz en cada paso. Perfecta para bodas, graduaciones y noches especiales.",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "slug": "6130-napa-metal-inox",
+    "name": "6130 Napa Metal Inox",
+    "price": 1599,
+    "image": "/images/products/6130-NAPA-METAL-INOX/6130-NAPA-METAL-INOX-1.webp",
+    "images": [
+      "/images/products/6130-NAPA-METAL-INOX/6130-NAPA-METAL-INOX-1.webp",
+      "/images/products/6130-NAPA-METAL-INOX/6130-NAPA-METAL-INOX-2.webp",
+      "/images/products/6130-NAPA-METAL-INOX/6130-NAPA-METAL-INOX-3.webp",
+      "/images/products/6130-NAPA-METAL-INOX/6130-NAPA-METAL-INOX-4.webp",
+      "/images/products/6130-NAPA-METAL-INOX/6130-NAPA-METAL-INOX-5.webp",
+      "/images/products/6130-NAPA-METAL-INOX/6130-NAPA-METAL-INOX-6.webp",
+      "/images/products/6130-NAPA-METAL-INOX/6130-NAPA-METAL-INOX-7.webp"
+    ],
+    "rating": 5,
+    "reviewCount": 0,
+    "sku": "6130",
+    "description": "Sandalia en napa con acabado metálico inox de aspecto moderno y sofisticado. Un tono versátil que añade brillo a tus looks de día y de noche.",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "slug": "6195-napa-metal-plata",
+    "name": "6195 Napa Metal Plata",
+    "price": 1599,
+    "image": "/images/products/6195-NAPA-METAL-PLATA/6195-NAPA-METAL-PLATA-2.webp",
+    "images": [
+      "/images/products/6195-NAPA-METAL-PLATA/6195-NAPA-METAL-PLATA-2.webp",
+      "/images/products/6195-NAPA-METAL-PLATA/6195-NAPA-METAL-PLATA-3.webp",
+      "/images/products/6195-NAPA-METAL-PLATA/6195-NAPA-METAL-PLATA-4.webp",
+      "/images/products/6195-NAPA-METAL-PLATA/6195-NAPA-METAL-PLATA-5.webp",
+      "/images/products/6195-NAPA-METAL-PLATA/6195-NAPA-METAL-PLATA-6.webp",
+      "/images/products/6195-NAPA-METAL-PLATA/6195-NAPA-METAL-PLATA-7.webp"
+    ],
+    "rating": 5,
+    "reviewCount": 0,
+    "sku": "6195",
+    "description": "Sandalia plateada de tacón bloque con tiras de estrás y tobillera en espiral. Brillo, estabilidad y comodidad para lucir impecable en tus eventos.",
+    "sizes": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
   }
 ]

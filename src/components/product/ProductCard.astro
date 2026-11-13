@@ -17,7 +17,7 @@ const { product } = Astro.props;
 ---
 
 <a href={`/products/${product.slug}`} class="group block">
-  <div class="aspect-[4/5] overflow-hidden border border-b-[3px] border-[#EADFC9] border-b-sun bg-linear-to-b from-white to-[#FFF4CC]">
+  <div class="aspect-[4/5] overflow-hidden border border-b-[3px] border border-[#EADFC9] bg-white">
     <img
       src={product.image}
       alt={product.name}

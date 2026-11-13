@@ -18,3 +18,15 @@ export type ApiErrorBody = {
   message: string;
   fieldErrors?: Record<string, string>;
 };
+export type LoginRequest = {
+  email: string;
+  password: string;
+};
+
+// The session itself travels in an HttpOnly cookie set by the API,
+// so the response only carries the user data
+export type LoginResponse = {
+  id: number;
+  name: string;
+  email: string;
+};
