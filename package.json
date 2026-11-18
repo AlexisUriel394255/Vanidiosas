@@ -9,7 +9,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "products:preview": "node scripts/add-products.mjs",
+  "products:add": "node scripts/add-products.mjs --write"
   },
   "dependencies": {
     "@astrojs/react": "^7.0.0",

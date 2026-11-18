@@ -37,7 +37,7 @@ const getCover = (p: (typeof products)[number]) => p.images?.[0] ?? p.image;
       <li>
         <a href={`/products/${p.slug}`} class="group block">
           <!-- Same look as the "Lo más vendido" cards: gradient + yellow bottom border -->
-          <div class="aspect-[4/5] overflow-hidden border-b-2 border-sun bg-linear-to-b from-white to-sun/20">
+          <div class="aspect-[4/5] overflow-hidden border-b-2 border border-[#EADFC9] bg-white">
             <img
               src={getCover(p)}
               alt={p.name}
