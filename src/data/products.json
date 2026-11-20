@@ -22,7 +22,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "perlas-cabra-maquillaje",
@@ -49,7 +50,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "snake-buck-negro",
@@ -76,7 +78,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6077-snake-napa-metal-oro-rosado",
@@ -103,7 +106,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6195-buck-negro",
@@ -130,7 +134,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6284-buck-negro",
@@ -157,7 +162,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6284-cabra-maquillaje",
@@ -184,7 +190,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6291-buck-negro",
@@ -211,13 +218,14 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6291-cabra-metal-plata",
     "name": "6291 Cabra Metal Plata",
     "price": 1599,
-    "image":   "/images/products/6291-CABRA-METAL-PLATA/6291-NAPA METAL-PLATA-1.webp",
+    "image": "/images/products/6291-CABRA-METAL-PLATA/6291-NAPA METAL-PLATA-1.webp",
     "images": [
       "/images/products/6291-CABRA-METAL-PLATA/6291-NAPA METAL-PLATA-1.webp",
       "/images/products/6291-CABRA-METAL-PLATA/6291-NAPA-METAL-PLATA-2.webp",
@@ -238,7 +246,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6291-napa-metal-oro-rosado",
@@ -265,7 +274,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6295-buck-negro",
@@ -292,7 +302,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6295-cabra-latte",
@@ -319,7 +330,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6295-cabra-maquillaje",
@@ -346,7 +358,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6296-cabra-metal-oro",
@@ -373,7 +386,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6296-buck-negro",
@@ -400,7 +414,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6297-napa-metal-oro",
@@ -427,7 +442,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6297-napa-metal-plata",
@@ -454,7 +470,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6297-buck-negro",
@@ -481,7 +498,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "charol-azul-marino",
@@ -508,7 +526,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "zapatillas"
   },
   {
     "slug": "6077-perlas-buck-negro",
@@ -532,7 +551,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6077-perlas-cabra-latte",
@@ -559,7 +579,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6077-piedra-buck-negro",
@@ -585,7 +606,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6077-piedra-napa-metal-inox",
@@ -612,7 +634,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6130-buck-negro",
@@ -639,7 +662,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6130-cabra-metal-plata",
@@ -666,7 +690,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6130-napa-metal-inox",
@@ -693,7 +718,8 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   },
   {
     "slug": "6195-napa-metal-plata",
@@ -719,6 +745,7 @@
       "25",
       "26",
       "27"
-    ]
+    ],
+    "category": "sandalias"
   }
 ]
