@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Minus, Plus, Check } from 'lucide-react';
-import { MAX_QUANTITY, addToCart, openCart } from '../../stores/cart';
+import { MessageCircle, Check } from 'lucide-react';
 
 type Props = {
   productName: string;
@@ -12,9 +11,11 @@ type Props = {
 
 type Feedback = { type: 'error' | 'success'; text: string };
 
-export default function ProductPurchase({ productName, sizes, slug, price, image }: Props) {
+// Read from .env at build time. Digits only, with country code (e.g. 52 + 10 digits for Mexico).
+const WHATSAPP_NUMBER = import.meta.env.PUBLIC_WHATSAPP_NUMBER as string | undefined;
+
+export default function ProductPurchase({ productName, sizes }: Props) {
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
-  const [quantity, setQuantity] = useState(1);
   const [feedback, setFeedback] = useState<Feedback | null>(null);
 
   function selectSize(size: string) {
@@ -22,38 +23,29 @@ export default function ProductPurchase({ productName, sizes, slug, price, image
     setFeedback(null);
   }
 
-  // Validates the size and adds the selection to the shared cart.
-  // Returns true when the product was added
-  function addSelectionToCart(): boolean {
+  function handleWhatsApp() {
     if (!selectedSize) {
       setFeedback({ type: 'error', text: 'Selecciona tu talla para continuar.' });
-      return false;
+      return;
     }
 
-    // Inside this `if` check, TypeScript knows selectedSize is a string
-    addToCart({ slug, name: productName, price, image, size: selectedSize }, quantity);
-    return true;
-  }
+    if (!WHATSAPP_NUMBER) {
+      setFeedback({
+        type: 'error',
+        text: 'El WhatsApp de la tienda no está disponible por ahora.',
+      });
+      return;
+    }
 
-  function handleAddToCart() {
-    if (!addSelectionToCart()) return;
+    // The page URL lets the shop find the exact model the customer is asking about
+    const message =
+      `Hola, me interesa el modelo ${productName} en talla ${selectedSize}. ` +
+      `${window.location.href}`;
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+   
 
-    setFeedback({
-      type: 'success',
-      text: `${quantity} × ${productName}, talla ${selectedSize}, añadido al carrito.`,
-    });
-    // Reset so the next click does not add the same amount again by accident
-    setQuantity(1);
-    openCart();
-  }
-
-  function handleBuyNow() {
-    if (!addSelectionToCart()) return;
-
-    // TODO: redirect to /checkout when that page exists
-    setFeedback(null);
-    setQuantity(1);
-    openCart();
+    window.open(url, '_blank', 'noopener,noreferrer');
+    setFeedback({ type: 'success', text: 'Abriendo WhatsApp…' });
   }
 
   return (
@@ -79,43 +71,14 @@ export default function ProductPurchase({ productName, sizes, slug, price, image
         ))}
       </div>
 
-      <div className="mt-6">
-        <p className="mb-3 text-xs font-medium uppercase tracking-[0.22em]">Cantidad</p>
-        <div className="inline-flex items-center border border-[#D9CBA8] bg-white">
-          <button
-            type="button"
-            aria-label="Disminuir cantidad"
-            onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-            className="flex size-12 items-center justify-center transition-colors hover:bg-[#FFF4CC]"
-          >
-            <Minus size={16} />
-          </button>
-          <span className="w-12 text-center" aria-live="polite">{quantity}</span>
-          <button
-            type="button"
-            aria-label="Aumentar cantidad"
-            onClick={() => setQuantity((q) => Math.min(MAX_QUANTITY, q + 1))}
-            className="flex size-12 items-center justify-center transition-colors hover:bg-[#FFF4CC]"
-          >
-            <Plus size={16} />
-          </button>
-        </div>
-      </div>
-
-      <div className="mt-8 flex flex-col gap-3">
+      <div className="mt-8">
         <button
           type="button"
-          onClick={handleAddToCart}
-          className="w-full bg-sun px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] text-ink transition-colors hover:bg-[#ffd74a]"
+          onClick={handleWhatsApp}
+          className="flex w-full items-center justify-center gap-2 bg-sun px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] text-ink transition-colors hover:bg-[#ffd74a]"
         >
-          Añadir al carrito
-        </button>
-        <button
-          type="button"
-          onClick={handleBuyNow}
-          className="w-full bg-ink px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#2a2622]"
-        >
-          Comprar ahora
+          <MessageCircle size={18} />
+          Consultar por WhatsApp
         </button>
       </div>
 
