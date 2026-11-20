@@ -1,34 +1,31 @@
 ---
 import { formatPrice } from '../../utils/format';
+import type { Product } from '../../data/collections';
 
-// Only the fields this card needs. Extra fields in the product are allowed
 interface Props {
-  product: {
-    slug: string;
-    name: string;
-    price: number;
-    image: string;
-    rating: number;
-    reviewCount: number;
-  };
+  product: Product;
 }
 
 const { product } = Astro.props;
 ---
-
 <a href={`/products/${product.slug}`} class="group block">
-  <div class="aspect-[4/5] overflow-hidden border border-b-[3px] border border-[#EADFC9] bg-white">
+  <div class="aspect-[4/5] overflow-hidden border border-b-[3px] border-[#EADFC9] bg-white">
     <img
-      src={product.image}
+      src={product.image ?? product.images?.[0]}
       alt={product.name}
       loading="lazy"
       class="size-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
     />
   </div>
   <h3 class="mt-4 text-base">{product.name}</h3>
-  <p class="mt-1 text-[13px] tracking-widest text-sun-deep">
-    {'★'.repeat(product.rating)}
-    <span class="tracking-normal text-muted">({product.reviewCount})</span>
-  </p>
+
+  {/* Only show the rating row when the product has a rating */}
+  {product.rating ? (
+    <p class="mt-1 text-[13px] tracking-widest text-sun-deep">
+      {'★'.repeat(product.rating)}
+      <span class="tracking-normal text-muted">({product.reviewCount ?? 0})</span>
+    </p>
+  ) : null}
+
   <p class="mt-1.5 text-[17px] font-medium">{formatPrice(product.price)}</p>
 </a>

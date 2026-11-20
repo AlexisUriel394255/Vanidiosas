@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import products from '../data/products.json';
-import { formatPrice } from '../utils/format';
+import ProductCard from '../components/product/ProductCard.astro';
 
 // Singular or plural depending on the amount
 const countLabel = `${products.length} ${products.length === 1 ? 'modelo' : 'modelos'}`;
@@ -27,27 +27,7 @@ const countLabel = `${products.length} ${products.length === 1 ? 'modelo' : 'mod
         <ul class="grid grid-cols-2 gap-7 lg:grid-cols-4">
           {products.map((product) => (
             <li>
-              <a href={`/products/${product.slug}`} class="group block">
-                <div class="aspect-[4/5] overflow-hidden border border-b-[3px] border border-[#EADFC9] bg-white">
-                  <img
-                    src={product.image ?? product.images?.[0]}
-                    alt={product.name}
-                    loading="lazy"
-                    class="size-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <h3 class="mt-4 text-base">{product.name}</h3>
-
-                {/* Only show the rating row when the product has a rating */}
-                {product.rating ? (
-                  <p class="mt-1 text-[13px] tracking-widest text-sun-deep">
-                    {'★'.repeat(product.rating)}
-                    <span class="tracking-normal text-muted">({product.reviewCount ?? 0})</span>
-                  </p>
-                ) : null}
-
-                <p class="mt-1.5 text-[17px] font-medium">{formatPrice(product.price)}</p>
-              </a>
+              <ProductCard product={product} />
             </li>
           ))}
         </ul>
