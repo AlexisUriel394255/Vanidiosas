@@ -1,5 +1,5 @@
 ---
-import { User } from '@lucide/astro';
+import { User, Menu, X } from '@lucide/astro';
 import SearchDialog from './SearchDialog.tsx';
 import CartDrawer from './CartDrawer.tsx';
 import products from '../../data/products.json';
@@ -22,8 +22,8 @@ const searchItems = products.map((product) => ({
 }));
 ---
 
-<header class="border-b border-[#E6DCCD] bg-ivory">
-  <div class="mx-auto flex h-[84px] max-w-[1240px] items-center justify-between px-8">
+<header class="relative border-b border-[#E6DCCD] bg-ivory">
+  <div class="mx-auto flex h-[84px] max-w-[1240px] items-center justify-between px-5 sm:px-8">
     <a href="/" class="flex flex-col items-center leading-none">
       <span class="font-display text-4xl font-semibold tracking-tight">Vanidiosas</span>
       <span class="mt-1 text-[10px] tracking-[0.38em] text-muted">BY GONSA</span>
@@ -35,15 +35,45 @@ const searchItems = products.map((product) => ({
       ))}
     </nav>
 
-    <div class="flex gap-1">
+    <div class="flex items-center gap-1">
       <!-- React islands: they hydrate when the browser is idle -->
       <SearchDialog client:idle products={searchItems} />
 
-      <a href="/Register" aria-label="Mi cuenta" class="flex size-11 items-center justify-center">
+    <!--  <a href="/Register" aria-label="Mi cuenta" class="flex size-11 items-center justify-center">
         <User size={22} strokeWidth={1.5} />
-      </a>
-
+      </a> -->
+    <!--
       <CartDrawer client:idle />
+      -->
+
+      <!-- Mobile menu: native <details>, no JavaScript needed. Hidden from lg screens up. -->
+      <details class="group lg:hidden">
+        <summary
+          aria-label="Menú"
+          class="flex size-11 cursor-pointer list-none items-center justify-center [&::-webkit-details-marker]:hidden"
+        >
+          <Menu size={24} strokeWidth={1.5} class="group-open:hidden" />
+          <X size={24} strokeWidth={1.5} class="hidden group-open:block" />
+        </summary>
+
+        <nav
+          aria-label="Menú móvil"
+          class="absolute inset-x-0 top-full z-40 border-b border-[#E6DCCD] bg-ivory shadow-sm"
+        >
+          <ul class="flex flex-col px-5 py-2">
+            {links.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="block border-b border-[#E6DCCD]/60 py-4 text-sm tracking-wide hover:text-wine"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </details>
     </div>
   </div>
 </header>
