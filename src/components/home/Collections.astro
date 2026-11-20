@@ -1,10 +1,20 @@
 ---
-const collections = [
-  { name: 'Sandalias', href: '/collections/sandals', image: '/images/products/6077-perlas-buck-negro-1.webp' },
-  { name: 'Zapatillas', href: '/collections/shoes', image: '/images/products/6077-snake-cabra-metal-oro-2.webp' },
-  { name: 'Balerinas', href: '/collections/flats', image: '/images/products/6077-perlas-cabra-maquillaje-1.webp' },
-  { name: 'Lo más nuevo', href: '/collections/new-arrivals', image: '/images/products/6077-snake-buck-negro-1.webp', featured: true },
-];
+import { collections } from '../../data/collections';
+import products from '../../data/products.json';
+
+// Only show collections that have at least one product
+const cards = collections
+  .map((collection) => {
+    const items = products.filter(collection.filter);
+    return {
+      name: collection.title,
+      href: `/collections/${collection.slug}`,
+      image: items[0]?.image,
+      count: items.length,
+      featured: collection.slug === 'nuevo',
+    };
+  })
+  .filter((card) => card.count > 0);
 ---
 <section class="bg-white">
   <div class="mx-auto max-w-[1240px] px-8 py-20">
@@ -12,16 +22,24 @@ const collections = [
     <div class="mb-10 mt-3.5 h-[3px] w-16 bg-sun"></div>
 
     <div class="grid grid-cols-2 gap-6 lg:grid-cols-4">
-      {collections.map((item) => (
+      {cards.map((card) => (
         <a
-          href={item.href}
-          class={`flex aspect-[3/4] items-end border-b-[3px] border-transparent p-6 transition-colors hover:border-sun ${
-            item.featured
+          href={card.href}
+          class={`relative flex aspect-[3/4] items-end overflow-hidden border-b-[3px] border-transparent p-6 transition-colors hover:border-sun ${
+            card.featured
               ? 'bg-linear-to-b from-[#FFE680] to-sun'
               : 'bg-linear-to-b from-bone to-[#E6D8B8]'
           }`}
         >
-          <span class="font-display text-3xl font-medium text-ink">{item.name}</span>
+          {card.image && (
+            <img
+              src={card.image}
+              alt=""
+              loading="lazy"
+              class="absolute inset-0 size-full object-contain p-4 pb-16 mix-blend-multiply"
+            />
+          )}
+          <span class="relative font-display text-3xl font-medium text-ink">{card.name}</span>
         </a>
       ))}
     </div>
