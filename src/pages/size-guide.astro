@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { sizeGuide } from '../data/size-guide';
+---
+
+<Layout title="Guía de tallas | Vanidiosas by Gonsa">
+  <section class="bg-bone">
+    <div class="mx-auto max-w-[1240px] px-8 py-16">
+
+      <nav aria-label="Breadcrumb" class="mb-8 text-[13px] text-muted">
+        <a href="/" class="hover:text-ink">Inicio</a>
+        <span class="mx-2">/</span>
+        <span class="text-ink">Guía de tallas</span>
+      </nav>
+
+      <h1 class="font-display text-4xl font-medium md:text-5xl">Guía de tallas</h1>
+      <div class="mb-4 mt-3.5 h-[3px] w-16 bg-sun"></div>
+      <p class="mb-10 text-sm text-muted">
+        Equivalencias aproximadas. Si tienes dudas, escríbenos por WhatsApp y te ayudamos a elegir.
+      </p>
+
+      <div class="overflow-x-auto">
+        <table class="w-full max-w-xl border border-[#EADFC9] bg-white text-left">
+          <thead>
+            <tr class="border-b-[3px] border-sun">
+              <th class="px-5 py-3 font-medium">México</th>
+              <th class="px-5 py-3 font-medium">EE. UU.</th>
+              <th class="px-5 py-3 font-medium">Europa</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sizeGuide.map((row) => (
+              <tr class="border-b border-[#EFE5D6]">
+                <td class="px-5 py-3">{row.mx}</td>
+                <td class="px-5 py-3">{row.us}</td>
+                <td class="px-5 py-3">{row.eu}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+</Layout>
