@@ -50,9 +50,14 @@ export default function ProductPurchase({ productName, sizes }: Props) {
 
   return (
     <div className="mt-8">
-      <p className="mb-3 text-xs font-medium uppercase tracking-[0.22em]">
-        Talla {selectedSize && <span className="text-muted">· {selectedSize}</span>}
-      </p>
+            <div className="mb-3 flex items-center justify-between">
+        <p className="text-xs font-medium uppercase tracking-[0.22em]">
+          Talla {selectedSize && <span className="text-muted">· {selectedSize}</span>}
+        </p>
+        <a href="/size-guide" className="text-[13px] text-muted underline hover:text-ink">
+          Guía de tallas
+        </a>
+      </div>
       <div className="flex flex-wrap gap-2">
         {sizes.map((size) => (
           <button
