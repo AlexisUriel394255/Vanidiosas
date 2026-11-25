@@ -7,23 +7,30 @@ const IMAGES_ROOT = "public/images";
 const PRODUCTS_FILE = "src/data/products.json";
 const DEFAULT_PRICE = 1599;
 // Folders to skip, relative to IMAGES_ROOT (for example brand images)
-const IGNORE_FOLDERS = [];
+const IGNORE_FOLDERS = [
+  "products/6130-napa-metal-plata",
+  "products/6077-snake-napa-metal-oro",
+];
 
 // One line per model. The key can be the model code ("10127") or the folder slug.
 // category: "sandalias", "zapatillas" or "balerinas". "price" is optional
 const MODELS = {
   "6077": { category: "sandalias" },
+  "6195": { category: "sandalias" },
+  "6130": { category: "sandalias" },
   "10110": { category: "sandalias" },
   "10127": { category: "zapatillas" },
   "10161": { category: "zapatillas" },
   "10164": { category: "zapatillas" },
   "10188": { category: "zapatillas" },
   "10453": { category: "sandalias" },
+  "10458": { category: "sandalias" },
   "10575": { category: "sandalias" },
   "10596": { category: "sandalias" },
-  
+
   // "6077": { category: "sandalias" }, // only if it is a NEW model
 };
+
 // ----------------------------------------------
 
 // Without --write the script only previews and changes nothing
